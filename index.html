@@ -4,30 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio | María Pia Saavedra</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#0f172a; color:#f8fafc; }
-    header { background:#1e293b; padding:20px; text-align:center; }
-    header h1 { margin:0; }
-    nav a { margin:0 15px; color:#38bdf8; text-decoration:none; }
-    section { padding:40px; max-width:900px; margin:auto; }
-    .project { background:#1e293b; padding:20px; margin:15px 0; border-radius:10px; }
-    a { color:#38bdf8; }
-    footer { text-align:center; padding:20px; background:#1e293b; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>👩‍💻 María Pia Saavedra</h1>
-    <p>Data Analyst en formación | Aspirante a Data Scientist</p>
-    <nav>
-      <a href="#about">Sobre mí</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#contact">Contacto</a>
-    </nav>
+    <div class="container">
+      <img src="img/foto-perfil.jpg" alt="Foto de María Pia" class="perfil">
+      <h1>María Pia Saavedra</h1>
+      <p>Data Analyst en formación | Aspirante a Data Scientist</p>
+      <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
   </header>
 
   <section id="about">
-    <h2>Sobre mí</h2>
+    <h2>👩‍💻 Sobre mí</h2>
     <p>
       Soy estudiante de Ingeniería Industrial apasionada por el análisis de datos y la ciencia de datos.
       Tengo experiencia en documentación TI, metodologías ágiles y herramientas de visualización como Power BI y Excel.
@@ -36,34 +30,36 @@
   </section>
 
   <section id="projects">
-    <h2>Proyectos</h2>
-    <div class="project">
-      <h3>📊 EDA de Ventas</h3>
-      <p>Análisis exploratorio de datos de e-commerce usando Python.</p>
-      <a href="https://github.com/mapisaavedra/Proyecto-Ventas">Ver en GitHub</a>
-    </div>
-    <div class="project">
-      <h3>📈 Dashboard RRHH</h3>
-      <p>Dashboard interactivo en Power BI para monitoreo de KPIs.</p>
-      <a href="https://app.powerbi.com">Abrir Dashboard</a>
-    </div>
-    <div class="project">
-      <h3>🤖 Modelo de Predicción de Churn</h3>
-      <p>Modelo de machine learning para predecir clientes en riesgo de abandono.</p>
-      <a href="https://github.com/mapisaavedra/Proyecto-Churn">Ver en GitHub</a>
+    <h2>🚀 Proyectos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>📊 EDA de Ventas</h3>
+        <p>Análisis exploratorio de e-commerce con Python.</p>
+        <a href="https://github.com/mapisaavedra/Proyecto-Ventas" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>📈 Dashboard RRHH</h3>
+        <p>Dashboard en Power BI para monitoreo de KPIs.</p>
+        <a href="https://app.powerbi.com" target="_blank">Abrir Dashboard</a>
+      </div>
+      <div class="project-card">
+        <h3>🤖 Predicción de Churn</h3>
+        <p>Modelo de machine learning para detectar clientes en riesgo.</p>
+        <a href="https://github.com/mapisaavedra/Proyecto-Churn" target="_blank">Ver en GitHub</a>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contacto</h2>
+    <h2>📬 Contacto</h2>
     <p>📧 <a href="mailto:mariapiasaavedrachavez@gmail.com">mariapiasaavedrachavez@gmail.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/mariapiasaavedra111/">LinkedIn</a></p>
-    <p>🐙 <a href="https://github.com/mapisaavedra">GitHub</a></p>
-    <p>📄 <a href="CV-MariaPia.pdf">Curriculum Vitae</a></p>
+    <p>💼 <a href="https://www.linkedin.com/in/mariapiasaavedra111/" target="_blank">LinkedIn</a></p>
+    <p>🐙 <a href="https://github.com/mapisaavedra" target="_blank">GitHub</a></p>
+    <p>📄 <a href="CV-MariaPia.pdf" target="_blank">Curriculum Vitae</a></p>
   </section>
 
   <footer>
-    <p>© 2025 María Pia Saavedra Chavez</p>
+    <p>© 2025 María Pia Saavedra Chavez | Desarrollado con ❤️ en GitHub Pages</p>
   </footer>
 </body>
 </html>
