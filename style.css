@@ -1,4 +1,4 @@
-/* ===== Reset general ===== */
+/* ===== General ===== */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -68,6 +68,12 @@ h2 {
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(30px);
+}
+.project-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 .project-card:hover {
   transform: translateY(-8px);
@@ -122,4 +128,17 @@ footer {
   padding: 20px;
   color: #94a3b8;
   font-size: 0.9rem;
+}
+
+/* ===== Cursor del typing ===== */
+.cursor {
+  display: inline-block;
+  color: #38bdf8;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
