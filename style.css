@@ -1,4 +1,4 @@
-/* Reset y fuente */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +7,26 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f9fafc;
-  color: #333;
-  line-height: 1.6;
+  background: linear-gradient(180deg, #A5D8FF, #FFFFFF);
+  color: #2A3D66;
+  overflow-x: hidden;
+}
+
+/* Stickers flotantes */
+.sticker {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.7;
+}
+.sticker1 { top: 15%; left: 5%; }
+.sticker2 { top: 40%; right: 10%; }
+.sticker3 { bottom: 20%; left: 15%; }
+.sticker4 { bottom: 10%; right: 20%; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
 /* Hero */
@@ -17,46 +34,42 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px;
-  background: linear-gradient(135deg, #1a237e, #4a148c);
-  color: white;
+  padding: 80px 40px;
+  color: #203A43;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .hero-text h1 {
   font-size: 3rem;
+  color: #4A90E2;
 }
-
-.hero-text h1 span {
-  color: #ffeb3b;
+.hero-text span {
+  color: #203A43;
 }
-
 .hero-text p {
   margin: 15px 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
-
 .hero-img img {
   width: 250px;
   border-radius: 50%;
-  border: 4px solid #ffeb3b;
+  border: 4px solid #4A90E2;
 }
-
 .btn {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 20px;
-  background: #ff9800;
-  color: #fff;
+  background: #4A90E2;
+  color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 20px;
   font-weight: bold;
   transition: transform 0.3s ease, background 0.3s ease;
 }
-
 .btn:hover {
-  transform: scale(1.05);
-  background: #e68900;
+  transform: scale(1.1);
+  background: #357ABD;
 }
 
 /* Secciones */
@@ -64,20 +77,18 @@ section {
   padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
-  text-align: center;
 }
-
 h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #1a237e;
+  color: #4A90E2;
 }
 
 /* Sobre mí */
 .sobre-mi p {
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 /* Timeline */
@@ -87,49 +98,42 @@ h2 {
   flex-wrap: wrap;
   gap: 40px;
 }
-
 .exp-edu ul {
   list-style: none;
   text-align: left;
 }
-
 .exp-edu li {
   background: white;
   padding: 15px;
   margin-bottom: 10px;
-  border-left: 5px solid #ff9800;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #4A90E2;
+  box-shadow: 0 4px 10px var(--sombra);
 }
 
 /* Certificaciones */
 .certificaciones {
   background: #f1f3f8;
+  border-radius: 20px;
 }
-
 .grid-certificaciones {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
-
 .certificado {
   background: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
-
 .certificado:hover {
   transform: translateY(-5px);
 }
-
 .certificado a {
-  display: inline-block;
-  margin-top: 8px;
-  color: #ff9800;
-  text-decoration: none;
+  color: #4A90E2;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* Proyectos */
@@ -138,28 +142,24 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
-
 .project-card {
   background: white;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-in-out;
 }
-
 .project-card img {
   width: 100%;
   border-radius: 10px;
 }
-
 .project-card a {
-  color: #ff9800;
+  color: #4A90E2;
   font-weight: bold;
   text-decoration: none;
 }
-
 .fade-in {
   opacity: 1 !important;
   transform: translateY(0) !important;
@@ -167,17 +167,15 @@ h2 {
 
 /* Footer */
 footer {
-  background: #1a237e;
+  background: #4A90E2;
   color: white;
   text-align: center;
   padding: 20px;
 }
-
 footer a {
-  color: #ffeb3b;
+  color: #FFD700;
   text-decoration: none;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
