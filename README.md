@@ -4,7 +4,7 @@
 📊 Me apasiona convertir datos en información valiosa para la toma de decisiones efectivas.  
 
 🔗 [LinkedIn](https://www.linkedin.com/in/mariapiasaavedra111/)  
-📄 [Curriculum Vitae](CV-MariaPia.pdf)  
+📄 [Curriculum Vitae](CV%20Maria%20Pia%20Saavedra%20Chavez.pdf)
 📍 Lima, Perú  
 📧 [mariapiasaavedrachavez@gmail.com](mailto:mariapiasaavedrachavez@gmail.com)
 
