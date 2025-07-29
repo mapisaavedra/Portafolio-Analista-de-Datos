@@ -1,86 +1,99 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio | María Pia Saavedra</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Encabezado -->
-  <header>
-    <div class="container">
-      <img src="img/foto-perfil.jpg" alt="Foto de María Pia" class="perfil">
-      <h1><span id="typing-name"></span><span class="cursor">|</span></h1>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Hola, soy <span>María Pia Saavedra</span> ✨</h1>
       <p>Data Analyst en formación | Aspirante a Data Scientist</p>
-      <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contacto</a>
-      </nav>
+      <a href="#proyectos" class="btn">Ver mis proyectos</a>
+    </div>
+    <div class="hero-img">
+      <img src="img/foto-perfil.png" alt="María Pia Saavedra">
     </div>
   </header>
 
   <!-- Sobre mí -->
-  <section id="about">
-    <h2>👩‍💻 Sobre mí</h2>
+  <section class="sobre-mi">
+    <h2>Sobre mí</h2>
     <p>
-      Soy estudiante de Ingeniería Industrial apasionada por el análisis de datos y la ciencia de datos.
-      Me motiva convertir datos en información valiosa para la toma de decisiones.  
-      Domino herramientas como Python, SQL, Power BI y Excel, y actualmente estoy completando certificaciones en Data Analytics y Data Science.
+      Me apasiona transformar datos en información valiosa para la toma de decisiones efectivas. 
+      Trabajo con Python, SQL, Excel y Power BI. Mi meta es crecer como Data Scientist y 
+      aplicar soluciones basadas en datos en proyectos reales.
     </p>
   </section>
 
-  <!-- Proyectos -->
-  <section id="projects">
-    <h2>🚀 Proyectos</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>📊 EDA de Ventas</h3>
-        <p>Análisis exploratorio de datos de e-commerce con Python.</p>
-        <a href="https://github.com/mapisaavedra/Proyecto-Ventas" target="_blank">Ver en GitHub</a>
+  <!-- Educación y Experiencia -->
+  <section class="timeline">
+    <h2>Educación</h2>
+    <ul>
+      <li><span>2023 - Actualidad:</span> Certificación en Análisis de Datos</li>
+      <li><span>2020 - 2022:</span> Licenciatura en Estadística Aplicada</li>
+    </ul>
+
+    <h2>Experiencia</h2>
+    <ul>
+      <li><span>2024:</span> Proyecto freelance: Dashboard en Power BI</li>
+      <li><span>2023:</span> Análisis de datos de ventas con Python y SQL</li>
+    </ul>
+  </section>
+
+  <!-- CERTIFICACIONES -->
+  <section class="certificaciones">
+    <h2>📜 Certificaciones</h2>
+    <div class="grid-certificaciones">
+      <div class="certificado">
+        <h3>Data Analysis with Python</h3>
+        <p>IBM - 2024</p>
+        <a href="#" target="_blank">Ver credencial</a>
       </div>
-      <div class="project-card">
-        <h3>📈 Dashboard RRHH</h3>
-        <p>Dashboard en Power BI para monitorear KPIs de recursos humanos.</p>
-        <a href="https://app.powerbi.com" target="_blank">Abrir Dashboard</a>
+      <div class="certificado">
+        <h3>SQL for Data Science</h3>
+        <p>Coursera - 2023</p>
+        <a href="#" target="_blank">Ver credencial</a>
       </div>
-      <div class="project-card">
-        <h3>🤖 Predicción de Churn</h3>
-        <p>Modelo de machine learning para detectar clientes en riesgo de abandono.</p>
-        <a href="https://github.com/mapisaavedra/Proyecto-Churn" target="_blank">Ver en GitHub</a>
+      <div class="certificado">
+        <h3>Excel Avanzado</h3>
+        <p>Microsoft - 2022</p>
+        <a href="#" target="_blank">Ver credencial</a>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>🛠️ Tech Stack</h2>
-    <p>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-      <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
-      <img src="https://img.shields.io/badge/SQL-FF6F00?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
-      <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black" alt="Power BI">
-      <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel">
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-    </p>
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="grid-proyectos">
+      <div class="proyecto">
+        <img src="img/proyecto1.png" alt="Proyecto 1">
+        <h3>Dashboard de Ventas</h3>
+        <p>Creación de un dashboard en Power BI para analizar KPIs de ventas.</p>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="proyecto">
+        <img src="img/proyecto2.png" alt="Proyecto 2">
+        <h3>Análisis en Python</h3>
+        <p>Exploración de datos de clientes para segmentación de mercado.</p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contact">
-    <h2>📬 Contacto</h2>
-    <p>📧 <a href="mailto:mariapiasaavedrachavez@gmail.com">mariapiasaavedrachavez@gmail.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/mariapiasaavedra111/" target="_blank">LinkedIn</a></p>
-    <p>🐙 <a href="https://github.com/mapisaavedra" target="_blank">GitHub</a></p>
-    <p>📄 <a href="CV-MariaPia.pdf" target="_blank">Curriculum Vitae</a></p>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 María Pia Saavedra Chavez | Desarrollado con ❤️ en GitHub Pages</p>
+    <p>📍 Lima, Perú</p>
+    <p>
+      <a href="mailto:mariapiasaavedrachavez@gmail.com">mariapiasaavedrachavez@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a> |
+      <a href="CV Maria Pia Saavedra Chavez.pdf" target="_blank">Descargar CV</a>
+    </p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
