@@ -3,12 +3,12 @@
 ¡Hola! Soy **María Pia Saavedra** ✨  
 **Data Analyst en formación | Aspirante a Data Scientist**
 
-Este portafolio incluye mis proyectos, certificaciones, experiencia y educación relacionados con **Análisis de Datos, Python, SQL, Excel y Power BI**.
+Este portafolio incluye mi experiencia, educación, certificaciones y proyectos de análisis de datos con **Python, SQL, Excel y Power BI**.
 
 ## 🔹 Contenido
 - 👩‍💻 Sobre mí
-- 🎓 Educación
 - 💼 Experiencia
+- 🎓 Educación
 - 📜 Certificaciones
 - 📊 Proyectos
 - 📬 Contacto
