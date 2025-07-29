@@ -1,144 +1,53 @@
-/* ===== General ===== */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0f172a;
-  color: #f8fafc;
-  line-height: 1.6;
-}
-
-/* ===== Header ===== */
-header {
-  background: linear-gradient(90deg, #1e293b, #334155);
-  color: #f8fafc;
-  padding: 40px 20px;
+/* Sección de certificaciones */
+.certificaciones {
+  background: #f5f7fa;
+  padding: 60px 20px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-header .perfil {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #38bdf8;
-  margin-bottom: 15px;
-  transition: transform 0.3s;
-}
-header .perfil:hover {
-  transform: scale(1.1);
+.certificaciones h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #203a43;
 }
 
-nav a {
-  margin: 0 15px;
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-nav a:hover {
-  color: #60a5fa;
-  text-decoration: underline;
-}
-
-/* ===== Secciones ===== */
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
+.grid-certificaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
   margin: auto;
 }
 
-h2 {
-  color: #38bdf8;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 2rem;
-}
-
-/* ===== Proyectos ===== */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background: #1e293b;
+.certificado {
+  background: white;
   padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  opacity: 0;
-  transform: translateY(30px);
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
 }
-.project-card.fade-in {
-  opacity: 1;
-  transform: translateY(0);
+
+.certificado:hover {
+  transform: translateY(-5px);
 }
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+
+.certificado h3 {
+  color: #0f2027;
+  margin-bottom: 10px;
 }
-.project-card h3 {
-  color: #38bdf8;
+
+.certificado p {
+  font-size: 0.95rem;
+  color: #555;
 }
-.project-card a {
+
+.certificado a {
   display: inline-block;
   margin-top: 10px;
-  padding: 8px 15px;
-  background: #38bdf8;
-  color: #0f172a;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.project-card a:hover {
-  background: #60a5fa;
-}
-
-/* ===== Tech Stack ===== */
-#skills p img {
-  margin: 8px;
-  transition: transform 0.3s;
-}
-#skills p img:hover {
-  transform: scale(1.1);
-}
-
-/* ===== Contacto ===== */
-#contact p {
-  text-align: center;
-  font-size: 1.1rem;
-}
-#contact a {
-  color: #38bdf8;
+  color: #ffb400;
   text-decoration: none;
   font-weight: bold;
 }
-#contact a:hover {
-  color: #60a5fa;
+.certificado a:hover {
   text-decoration: underline;
-}
-
-/* ===== Footer ===== */
-footer {
-  background: #1e293b;
-  text-align: center;
-  padding: 20px;
-  color: #94a3b8;
-  font-size: 0.9rem;
-}
-
-/* ===== Cursor del typing ===== */
-.cursor {
-  display: inline-block;
-  color: #38bdf8;
-  font-weight: bold;
-  animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
 }
