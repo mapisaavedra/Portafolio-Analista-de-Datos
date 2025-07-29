@@ -1,4 +1,4 @@
-// 1. Efecto typing en Hero
+// Typing effect
 const text = "María Pia Saavedra";
 let index = 0;
 const speed = 120;
@@ -12,7 +12,7 @@ function typingEffect() {
 }
 document.addEventListener("DOMContentLoaded", typingEffect);
 
-// 2. Scroll suave
+// Scroll suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -22,7 +22,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// 3. Fade-in para proyectos
+// Fade-in observer
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -31,4 +31,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.2 });
 
-document.querySelectorAll(".project-card").forEach(card => observer.observe(card));
+document.querySelectorAll(".fade-in, .project-card, .certificado").forEach(el => observer.observe(el));
