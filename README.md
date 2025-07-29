@@ -3,8 +3,6 @@
 ¡Hola! Soy **María Pia Saavedra** ✨  
 **Data Analyst en formación | Aspirante a Data Scientist**
 
-Este portafolio está inspirado en la estética **NewJeans Light**, con colores celestes y azules, animaciones suaves y un estilo fresco y juvenil.  
-
 ## 🌸 Contenido
 - 👩‍💻 Sobre mí  
 - 💼 Experiencia  
