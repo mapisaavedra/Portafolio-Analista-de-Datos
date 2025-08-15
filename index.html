@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>María Pia Saavedra | Portafolio de Análisis de Datos</title>
-  <meta name="description" content="Portafolio de María Pia Saavedra: proyectos de análisis de datos con Python, SQL, Excel y Power BI." />
+  <title>Mapi | Portafolio de Análisis de Datos</title>
+  <meta name="description" content="Portafolio de Mapi (María Pia Saavedra): proyectos de análisis de datos con Python, SQL, Excel y Power BI." />
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Portafolio | María Pia Saavedra">
+  <meta property="og:title" content="Portafolio | Mapi">
   <meta property="og:description" content="Proyectos de análisis de datos, dashboards y automatización.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -20,15 +20,16 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
-<body>
+<body class="light">
   <!-- Header / Nav -->
   <header class="site-header">
     <nav class="nav container" aria-label="Principal">
-      <a class="brand" href="#home" aria-label="Ir al inicio">María Pia Saavedra</a>
+      <a class="brand" href="#home" aria-label="Ir al inicio">Mapi</a>
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
       <ul id="menu" class="menu">
         <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#certificaciones">Certificaciones</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><button class="nav-toggle-theme" type="button" aria-label="Cambiar tema">Tema</button></li>
@@ -40,7 +41,7 @@
   <!-- Hero -->
   <main id="home" class="hero container">
     <div class="hero-text">
-      <h1>Hola, soy <span class="accent">María Pia Saavedra</span></h1>
+      <h1>Hola, soy <span class="accent">Mapi</span></h1>
       <p class="lead">Analista de Datos en formación · Python · SQL · Excel · Power BI</p>
       <div class="hero-ctas">
         <a class="btn" href="#proyectos" aria-label="Ver proyectos">Ver proyectos</a>
@@ -48,8 +49,7 @@
       </div>
     </div>
     <figure class="hero-img">
-      <!-- Puedes cambiar la imagen por tu foto -->
-      <img src="WhatsApp Image 2025-05-12 at 15.24.28.jpeg" alt="Foto de perfil de María Pia Saavedra" loading="eager" />
+      <img src="WhatsApp Image 2025-05-12 at 15.24.28.jpeg" alt="Foto de perfil de Mapi" loading="eager" />
     </figure>
   </main>
 
@@ -71,18 +71,16 @@
     <!-- Proyecto destacado (1 sola imagen real) -->
     <article class="feature card reveal" data-tags="python actions matplotlib">
       <figure class="feature-media">
-        <!-- Asegúrate de tener este archivo: img/proyecto-destacado.png -->
-        <img src="img/proyecto-destacado.png" alt="Captura del proyecto Monitor de Precios en Python" loading="lazy">
+        <img src="img/proyecto-destacado.png" alt="Monitor de Precios en Python (captura)" loading="lazy">
       </figure>
       <div class="feature-body">
         <h3>Monitor de precios (Python + GitHub Actions)</h3>
         <p>
-          Script que consulta precios de criptomonedas, guarda histórico en CSV, genera una gráfica y emite alertas por umbrales.
-          Se ejecuta automáticamente con GitHub Actions (cron).
+          Script que consulta precios de criptomonedas, guarda histórico en CSV, genera una gráfica y emite alertas por umbrales. Corre automáticamente con GitHub Actions.
         </p>
         <ul class="bullets">
           <li>Persistencia diaria de datos y gráfico histórico.</li>
-          <li>Configurable por YAML sin necesidad de API keys.</li>
+          <li>Configurable por YAML (sin API keys).</li>
           <li>Pipeline automatizado con commits de resultados.</li>
         </ul>
         <div class="links">
@@ -93,9 +91,8 @@
       </div>
     </article>
 
-    <!-- Grid para futuros proyectos (sin imágenes reales; placeholders) -->
+    <!-- Grid para futuros proyectos -->
     <div class="grid">
-      <!-- Ejemplo de tarjeta "coming soon" sin imagen externa -->
       <article class="card reveal" data-tags="powerbi dax">
         <div class="thumb placeholder" aria-hidden="true"></div>
         <div class="card-body">
@@ -122,6 +119,43 @@
     </div>
   </section>
 
+  <!-- Certificaciones (nueva sección con color) -->
+  <section id="certificaciones" class="section container">
+    <header class="section-head">
+      <h2>Certificaciones</h2>
+      <p class="section-sub">Aprendizaje continuo con foco en análisis, SQL y visualización.</p>
+    </header>
+
+    <div class="cert-grid">
+      <article class="cert card reveal cert--blue">
+        <div class="cert-head">
+          <h3>Data Analysis with Python</h3>
+          <span class="badge">IBM · 2024</span>
+        </div>
+        <p>Manipulación con Pandas, visualización y estadística básica para análisis exploratorio.</p>
+        <a class="link" href="#" target="_blank" rel="noopener">Ver credencial</a>
+      </article>
+
+      <article class="cert card reveal cert--purple">
+        <div class="cert-head">
+          <h3>SQL for Data Science</h3>
+          <span class="badge">Coursera · 2023</span>
+        </div>
+        <p>Consultas, joins, agregaciones y diseño de esquemas para reporting.</p>
+        <a class="link" href="#" target="_blank" rel="noopener">Ver credencial</a>
+      </article>
+
+      <article class="cert card reveal cert--teal">
+        <div class="cert-head">
+          <h3>Excel Avanzado</h3>
+          <span class="badge">Microsoft · 2022</span>
+        </div>
+        <p>Modelado, tablas dinámicas, validación de datos y funciones anidadas.</p>
+        <a class="link" href="#" target="_blank" rel="noopener">Ver credencial</a>
+      </article>
+    </div>
+  </section>
+
   <!-- Sobre mí -->
   <section id="sobre-mi" class="section container">
     <header class="section-head">
@@ -129,8 +163,9 @@
     </header>
     <div class="about">
       <p>
-        Me interesa convertir datos en decisiones prácticas. Trabajo con Python, SQL, Excel y Power BI.
-        Busco crecer como Data Scientist, con foco en calidad de datos, automatización y comunicación clara.
+        Soy Mapi (María Pia Saavedra). Me interesa convertir datos en decisiones prácticas.
+        Trabajo con Python, SQL, Excel y Power BI. Busco crecer como Data Scientist, con foco en calidad de datos,
+        automatización y comunicación clara.
       </p>
       <ul class="chips" aria-label="Tecnologías">
         <li>Python</li><li>SQL</li><li>Excel</li><li>Power BI</li><li>Pandas</li><li>Visualización</li>
@@ -150,7 +185,8 @@
           <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener">LinkedIn</a>
         </p>
       </div>
-      <form action="https://formspree.io/f/xxxxxxxx" method="POST" class="card form">
+      <!-- Formulario compacto -->
+      <form action="https://formspree.io/f/xxxxxxxx" method="POST" class="card form form--compact">
         <label>Nombre
           <input name="name" required>
         </label>
@@ -167,7 +203,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> María Pia Saavedra. Todos los derechos reservados.</small>
+      <small>© <span id="year"></span> Mapi. Todos los derechos reservados.</small>
     </div>
   </footer>
 
@@ -176,7 +212,7 @@
   {
     "@context":"https://schema.org",
     "@type":"Person",
-    "name":"María Pia Saavedra",
+    "name":"Mapi (María Pia Saavedra)",
     "jobTitle":"Analista de Datos",
     "email":"mailto:mariapiasaavedrachavez@gmail.com",
     "url":"https://mapisaavedra.github.io/Portafolio-Analista-de-Datos/",
@@ -185,3 +221,4 @@
   </script>
 </body>
 </html>
+
