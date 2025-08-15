@@ -35,25 +35,22 @@ const io = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) entry.target.classList.add("in-view");
   });
 }, { threshold: 0.2 });
-
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-// ========= Toggle de tema (oscuro / claro) =========
+// ========= Toggle de tema (claro por defecto / oscuro) =========
 const themeBtn = document.querySelector(".nav-toggle-theme");
-const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
-const savedTheme = localStorage.getItem("theme");
-const initialTheme = savedTheme || (prefersLight ? "light" : "dark");
+const savedTheme = localStorage.getItem("theme") || "light";
+setTheme(savedTheme);
 
 function setTheme(t){
+  document.documentElement.classList.toggle("dark", t === "dark");
   document.documentElement.classList.toggle("light", t === "light");
   localStorage.setItem("theme", t);
 }
-setTheme(initialTheme);
-
 if (themeBtn){
   themeBtn.addEventListener("click", () => {
-    const isLight = document.documentElement.classList.contains("light");
-    setTheme(isLight ? "dark" : "light");
+    const isDark = document.documentElement.classList.contains("dark");
+    setTheme(isDark ? "light" : "dark");
   });
 }
 
