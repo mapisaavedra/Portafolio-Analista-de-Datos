@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mapisaavedra.github.io/Portafolio-Analista-de-Datos/sitemap.xml
