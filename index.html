@@ -1,116 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio | María Pia Saavedra</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>María Pia Saavedra | Portafolio de Análisis de Datos</title>
+  <meta name="description" content="Portafolio de María Pia Saavedra: proyectos de análisis de datos con Python, SQL, Excel y Power BI." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Portafolio | María Pia Saavedra">
+  <meta property="og:description" content="Proyectos de análisis de datos, dashboards y automatización.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Fondos decorativos -->
-  <div class="sticker sticker1">🐇</div>
-  <div class="sticker sticker2">⭐</div>
-  <div class="sticker sticker3">🌸</div>
-  <div class="sticker sticker4">💫</div>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a class="brand" href="#home" aria-label="Ir al inicio">María Pia Saavedra</a>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Hola, soy <span id="typing-name"></span> ✨</h1>
-      <p>Data Analyst en formación | Aspirante a Data Scientist</p>
-      <a href="#proyectos" class="btn">🚀 Ver mis proyectos</a>
-    </div>
-    <div class="hero-img">
-      <img src="WhatsApp Image 2025-05-12 at 15.24.28.jpeg" alt="María Pia Saavedra">
-    </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button class="nav-toggle-theme" type="button" aria-label="Cambiar tema">Tema</button></li>
+        <li><a class="btn btn-outline" href="./CV Maria Pia Saavedra Chavez.pdf" target="_blank" rel="noopener">Descargar CV</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Sobre mí -->
-  <section class="sobre-mi fade-in">
-    <h2>👩‍💻 Sobre mí</h2>
-    <p>
-      Me apasiona transformar datos en información valiosa para la toma de decisiones efectivas. 
-      Trabajo con Python, SQL, Excel y Power BI. Mi meta es crecer como Data Scientist y 
-      aplicar soluciones basadas en datos en proyectos reales.
-    </p>
-  </section>
-
-  <!-- Experiencia y Educación -->
-  <section class="timeline fade-in">
-    <div class="exp-edu">
-      <div>
-        <h2>💼 Experiencia</h2>
-        <ul>
-          <li><span>2024:</span> Proyecto freelance: Dashboard en Power BI</li>
-          <li><span>2023:</span> Análisis de datos de ventas con Python y SQL</li>
-        </ul>
-      </div>
-      <div>
-        <h2>🎓 Educación</h2>
-        <ul>
-          <li><span>2023 - Actualidad:</span> Certificación en Análisis de Datos</li>
-          <li><span>2020 - 2022:</span> Licenciatura en Estadística Aplicada</li>
-        </ul>
+  <!-- Hero -->
+  <main id="home" class="hero container">
+    <div class="hero-text">
+      <h1>Hola, soy <span class="accent">María Pia Saavedra</span></h1>
+      <p class="lead">Analista de Datos en formación · Python · SQL · Excel · Power BI</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#proyectos" aria-label="Ver proyectos">Ver proyectos</a>
+        <a class="btn btn-outline" href="#contacto" aria-label="Ir a contacto">Contactar</a>
       </div>
     </div>
-  </section>
-
-  <!-- Certificaciones -->
-  <section class="certificaciones fade-in">
-    <h2>📜 Certificaciones</h2>
-    <div class="grid-certificaciones">
-      <div class="certificado">
-        <h3>Data Analysis with Python</h3>
-        <p>IBM - 2024</p>
-        <a href="#">Ver credencial</a>
-      </div>
-      <div class="certificado">
-        <h3>SQL for Data Science</h3>
-        <p>Coursera - 2023</p>
-        <a href="#">Ver credencial</a>
-      </div>
-      <div class="certificado">
-        <h3>Excel Avanzado</h3>
-        <p>Microsoft - 2022</p>
-        <a href="#">Ver credencial</a>
-      </div>
-    </div>
-  </section>
+    <figure class="hero-img">
+      <!-- Puedes cambiar la imagen por tu foto -->
+      <img src="WhatsApp Image 2025-05-12 at 15.24.28.jpeg" alt="Foto de perfil de María Pia Saavedra" loading="eager" />
+    </figure>
+  </main>
 
   <!-- Proyectos -->
-  <section id="proyectos" class="fade-in">
-    <h2>📊 Mis Proyectos</h2>
-    <div class="grid-proyectos">
-      <div class="project-card">
-        <img src="img/proyecto1.png" alt="Proyecto 1">
-        <h3>Dashboard de Ventas</h3>
-        <p>Creación de un dashboard en Power BI para analizar KPIs de ventas.</p>
-        <a href="#">Ver más</a>
+  <section id="proyectos" class="section container">
+    <header class="section-head">
+      <h2>Proyectos</h2>
+      <p class="section-sub">Selección de trabajos y ejercicios orientados a análisis de datos y automatización.</p>
+    </header>
+
+    <!-- Filtros por stack -->
+    <div class="filters" aria-label="Filtrar proyectos por tecnología">
+      <button class="chip is-active" data-filter="all" type="button">Todos</button>
+      <button class="chip" data-filter="python" type="button">Python</button>
+      <button class="chip" data-filter="powerbi" type="button">Power BI</button>
+      <button class="chip" data-filter="sql" type="button">SQL</button>
+    </div>
+
+    <!-- Proyecto destacado (1 sola imagen real) -->
+    <article class="feature card reveal" data-tags="python actions matplotlib">
+      <figure class="feature-media">
+        <!-- Asegúrate de tener este archivo: img/proyecto-destacado.png -->
+        <img src="img/proyecto-destacado.png" alt="Captura del proyecto Monitor de Precios en Python" loading="lazy">
+      </figure>
+      <div class="feature-body">
+        <h3>Monitor de precios (Python + GitHub Actions)</h3>
+        <p>
+          Script que consulta precios de criptomonedas, guarda histórico en CSV, genera una gráfica y emite alertas por umbrales.
+          Se ejecuta automáticamente con GitHub Actions (cron).
+        </p>
+        <ul class="bullets">
+          <li>Persistencia diaria de datos y gráfico histórico.</li>
+          <li>Configurable por YAML sin necesidad de API keys.</li>
+          <li>Pipeline automatizado con commits de resultados.</li>
+        </ul>
+        <div class="links">
+          <a class="btn" href="https://github.com/tuusuario/price-monitor" target="_blank" rel="noopener">Ver código</a>
+          <a class="btn btn-outline" href="https://tuusuario.github.io/price-monitor" target="_blank" rel="noopener">Ver demo</a>
+        </div>
+        <div class="tags">Python · Pandas · Matplotlib · GitHub Actions</div>
       </div>
-      <div class="project-card">
-        <img src="img/proyecto2.png" alt="Proyecto 2">
-        <h3>Análisis en Python</h3>
-        <p>Exploración de datos de clientes para segmentación de mercado.</p>
-        <a href="#">Ver más</a>
-      </div>
-      <div class="project-card">
-        <img src="img/proyecto3.png" alt="Proyecto 3">
-        <h3>SQL Query Dashboard</h3>
-        <p>Consultas avanzadas SQL para análisis financiero.</p>
-        <a href="#">Ver más</a>
-      </div>
+    </article>
+
+    <!-- Grid para futuros proyectos (sin imágenes reales; placeholders) -->
+    <div class="grid">
+      <!-- Ejemplo de tarjeta "coming soon" sin imagen externa -->
+      <article class="card reveal" data-tags="powerbi dax">
+        <div class="thumb placeholder" aria-hidden="true"></div>
+        <div class="card-body">
+          <h3>Dashboard de Ventas (próximamente)</h3>
+          <p>KPIs de ingresos y margen por región con filtros interactivos.</p>
+          <div class="links">
+            <span class="link muted">Demo</span>
+            <span class="link muted">Código</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="sql">
+        <div class="thumb placeholder" aria-hidden="true"></div>
+        <div class="card-body">
+          <h3>Consultas SQL financieras (próximamente)</h3>
+          <p>Modelado y consultas para métricas de rentabilidad y liquidez.</p>
+          <div class="links">
+            <span class="link muted">Detalles</span>
+            <span class="link muted">Código</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="section container">
+    <header class="section-head">
+      <h2>Sobre mí</h2>
+    </header>
+    <div class="about">
+      <p>
+        Me interesa convertir datos en decisiones prácticas. Trabajo con Python, SQL, Excel y Power BI.
+        Busco crecer como Data Scientist, con foco en calidad de datos, automatización y comunicación clara.
+      </p>
+      <ul class="chips" aria-label="Tecnologías">
+        <li>Python</li><li>SQL</li><li>Excel</li><li>Power BI</li><li>Pandas</li><li>Visualización</li>
+      </ul>
     </div>
   </section>
 
   <!-- Contacto -->
-  <footer>
-    <p>📍 Lima, Perú</p>
-    <p>
-      <a href="mailto:mariapiasaavedrachavez@gmail.com">mariapiasaavedrachavez@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a> |
-      <a href="CV Maria Pia Saavedra Chavez.pdf" target="_blank">Descargar CV</a>
-    </p>
+  <section id="contacto" class="section container">
+    <header class="section-head">
+      <h2>Contacto</h2>
+    </header>
+    <div class="contact-grid">
+      <div>
+        <p>
+          Lima, Perú · <a href="mailto:mariapiasaavedrachavez@gmail.com">mariapiasaavedrachavez@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+      <form action="https://formspree.io/f/xxxxxxxx" method="POST" class="card form">
+        <label>Nombre
+          <input name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Mensaje
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> María Pia Saavedra. Todos los derechos reservados.</small>
+    </div>
   </footer>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"María Pia Saavedra",
+    "jobTitle":"Analista de Datos",
+    "email":"mailto:mariapiasaavedrachavez@gmail.com",
+    "url":"https://mapisaavedra.github.io/Portafolio-Analista-de-Datos/",
+    "sameAs":["https://www.linkedin.com/in/tu-perfil"]
+  }
+  </script>
 </body>
 </html>
