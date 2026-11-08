@@ -1,224 +1,473 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mapi | Portafolio de Análisis de Datos</title>
-  <meta name="description" content="Portafolio de Mapi (María Pia Saavedra): proyectos de análisis de datos con Python, SQL, Excel y Power BI." />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Portafolio | Mapi">
-  <meta property="og:description" content="Proyectos de análisis de datos, dashboards y automatización.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Fuente -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-</head>
-<body class="light">
-  <!-- Header / Nav -->
-  <header class="site-header">
-    <nav class="nav container" aria-label="Principal">
-      <a class="brand" href="#home" aria-label="Ir al inicio">Mapi</a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
-      <ul id="menu" class="menu">
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#certificaciones">Certificaciones</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><button class="nav-toggle-theme" type="button" aria-label="Cambiar tema">Tema</button></li>
-        <li><a class="btn btn-outline" href="./CV Maria Pia Saavedra Chavez.pdf" target="_blank" rel="noopener">Descargar CV</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <main id="home" class="hero container">
-    <div class="hero-text">
-      <h1>Hola, soy <span class="accent">Mapi</span></h1>
-      <p class="lead">Analista de Datos en formación · Python · SQL · Excel · Power BI</p>
-      <div class="hero-ctas">
-        <a class="btn" href="#proyectos" aria-label="Ver proyectos">Ver proyectos</a>
-        <a class="btn btn-outline" href="#contacto" aria-label="Ir a contacto">Contactar</a>
-      </div>
-    </div>
-    <figure class="hero-img">
-      <img src="WhatsApp Image 2025-05-12 at 15.24.28.jpeg" alt="Foto de perfil de Mapi" loading="eager" />
-    </figure>
-  </main>
-
-  <!-- Proyectos -->
-  <section id="proyectos" class="section container">
-    <header class="section-head">
-      <h2>Proyectos</h2>
-      <p class="section-sub">Selección de trabajos y ejercicios orientados a análisis de datos y automatización.</p>
-    </header>
-
-    <!-- Filtros por stack -->
-    <div class="filters" aria-label="Filtrar proyectos por tecnología">
-      <button class="chip is-active" data-filter="all" type="button">Todos</button>
-      <button class="chip" data-filter="python" type="button">Python</button>
-      <button class="chip" data-filter="powerbi" type="button">Power BI</button>
-      <button class="chip" data-filter="sql" type="button">SQL</button>
-    </div>
-
-    <!-- Proyecto destacado (1 sola imagen real) -->
-    <article class="feature card reveal" data-tags="python actions matplotlib">
-      <figure class="feature-media">
-        <img src="img/proyecto-destacado.png" alt="Monitor de Precios en Python (captura)" loading="lazy">
-      </figure>
-      <div class="feature-body">
-        <h3>Monitor de precios (Python + GitHub Actions)</h3>
-        <p>
-          Script que consulta precios de criptomonedas, guarda histórico en CSV, genera una gráfica y emite alertas por umbrales. Corre automáticamente con GitHub Actions.
-        </p>
-        <ul class="bullets">
-          <li>Persistencia diaria de datos y gráfico histórico.</li>
-          <li>Configurable por YAML (sin API keys).</li>
-          <li>Pipeline automatizado con commits de resultados.</li>
-        </ul>
-        <div class="links">
-          <a class="btn" href="https://github.com/tuusuario/price-monitor" target="_blank" rel="noopener">Ver código</a>
-          <a class="btn btn-outline" href="https://tuusuario.github.io/price-monitor" target="_blank" rel="noopener">Ver demo</a>
-        </div>
-        <div class="tags">Python · Pandas · Matplotlib · GitHub Actions</div>
-      </div>
-    </article>
-
-    <!-- Grid para futuros proyectos -->
-    <div class="grid">
-      <article class="card reveal" data-tags="powerbi dax">
-        <div class="thumb placeholder" aria-hidden="true"></div>
-        <div class="card-body">
-          <h3>Dashboard de Ventas (próximamente)</h3>
-          <p>KPIs de ingresos y margen por región con filtros interactivos.</p>
-          <div class="links">
-            <span class="link muted">Demo</span>
-            <span class="link muted">Código</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="card reveal" data-tags="sql">
-        <div class="thumb placeholder" aria-hidden="true"></div>
-        <div class="card-body">
-          <h3>Consultas SQL financieras (próximamente)</h3>
-          <p>Modelado y consultas para métricas de rentabilidad y liquidez.</p>
-          <div class="links">
-            <span class="link muted">Detalles</span>
-            <span class="link muted">Código</span>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Certificaciones (nueva sección con color) -->
-  <section id="certificaciones" class="section container">
-    <header class="section-head">
-      <h2>Certificaciones</h2>
-      <p class="section-sub">Aprendizaje continuo con foco en análisis, SQL y visualización.</p>
-    </header>
-
-    <div class="cert-grid">
-      <article class="cert card reveal cert--blue">
-        <div class="cert-head">
-          <h3>Data Analysis with Python</h3>
-          <span class="badge">IBM · 2024</span>
-        </div>
-        <p>Manipulación con Pandas, visualización y estadística básica para análisis exploratorio.</p>
-        <a class="link" href="#" target="_blank" rel="noopener">Ver credencial</a>
-      </article>
-
-      <article class="cert card reveal cert--purple">
-        <div class="cert-head">
-          <h3>SQL for Data Science</h3>
-          <span class="badge">Coursera · 2023</span>
-        </div>
-        <p>Consultas, joins, agregaciones y diseño de esquemas para reporting.</p>
-        <a class="link" href="#" target="_blank" rel="noopener">Ver credencial</a>
-      </article>
-
-      <article class="cert card reveal cert--teal">
-        <div class="cert-head">
-          <h3>Excel Avanzado</h3>
-          <span class="badge">Microsoft · 2022</span>
-        </div>
-        <p>Modelado, tablas dinámicas, validación de datos y funciones anidadas.</p>
-        <a class="link" href="#" target="_blank" rel="noopener">Ver credencial</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Sobre mí -->
-  <section id="sobre-mi" class="section container">
-    <header class="section-head">
-      <h2>Sobre mí</h2>
-    </header>
-    <div class="about">
-      <p>
-        Soy Mapi (María Pia Saavedra). Me interesa convertir datos en decisiones prácticas.
-        Trabajo con Python, SQL, Excel y Power BI. Busco crecer como Data Scientist, con foco en calidad de datos,
-        automatización y comunicación clara.
-      </p>
-      <ul class="chips" aria-label="Tecnologías">
-        <li>Python</li><li>SQL</li><li>Excel</li><li>Power BI</li><li>Pandas</li><li>Visualización</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="section container">
-    <header class="section-head">
-      <h2>Contacto</h2>
-    </header>
-    <div class="contact-grid">
-      <div>
-        <p>
-          Lima, Perú · <a href="mailto:mariapiasaavedrachavez@gmail.com">mariapiasaavedrachavez@gmail.com</a> ·
-          <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener">LinkedIn</a>
-        </p>
-      </div>
-      <!-- Formulario compacto -->
-      <form action="https://formspree.io/f/xxxxxxxx" method="POST" class="card form form--compact">
-        <label>Nombre
-          <input name="name" required>
-        </label>
-        <label>Email
-          <input type="email" name="email" required>
-        </label>
-        <label>Mensaje
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn" type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Mapi. Todos los derechos reservados.</small>
-    </div>
-  </footer>
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Mapi (María Pia Saavedra)",
-    "jobTitle":"Analista de Datos",
-    "email":"mailto:mariapiasaavedrachavez@gmail.com",
-    "url":"https://mapisaavedra.github.io/Portafolio-Analista-de-Datos/",
-    "sameAs":["https://www.linkedin.com/in/tu-perfil"]
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Mapi · Analista de Datos</title>
+<meta content="Portafolio de Mapi (María Pia Saavedra): análisis de datos con Python, SQL, Excel y Power BI." name="description"/>
+<meta content="Mapi · Analista de Datos" property="og:title"/>
+<meta content="Convierto datos en decisiones claras." property="og:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#FFF8EC; --surface:#FFFFFF; --ink:#2B1B24; --muted:#7A6670; --line:#F1E3D3;
+  --accent:#D7263D; --accent-2:#4A7FD4; --gold:#F5B82E; --sky:#8ED1F5; --sky-soft:#E3F4FD; --soft:#FFE3E6; --soft-2:#DDEBFF;
+  --radius:26px; --shadow:6px 6px 0 var(--ink);
+}
+:root[data-theme="dark"]{
+  --bg:#1A1220; --surface:#251A2D; --ink:#FFF1F3; --muted:#BBA6B4; --line:#3A2B42;
+  --accent:#FF4D63; --accent-2:#8AB4FF; --gold:#FFCB52; --sky:#6CC3F0; --sky-soft:#16303F; --soft:#3A1A24; --soft-2:#1E2A45;
+  --shadow:6px 6px 0 #000;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1A1220; --surface:#251A2D; --ink:#FFF1F3; --muted:#BBA6B4; --line:#3A2B42;
+    --accent:#FF4D63; --accent-2:#8AB4FF; --gold:#FFCB52; --sky:#6CC3F0; --sky-soft:#16303F; --soft:#3A1A24; --soft-2:#1E2A45;
+    --shadow:6px 6px 0 #000;
   }
-  </script>
+}
+body{background-image:radial-gradient(var(--line) 1.2px,transparent 1.2px);background-size:22px 22px}
+.card,.fact,.float,.photo{border:2px solid var(--ink)!important}
+.card:hover{transform:translate(-3px,-3px)!important;box-shadow:9px 9px 0 var(--accent)!important}
+.hero h1 em,.contact h2 em{font-style:normal;background:linear-gradient(transparent 60%,var(--gold) 60%);color:var(--ink);padding:0 4px}
+.contact h2 em{color:var(--ink)}
+.sticker{position:absolute;font-weight:800;border:2px solid var(--ink);border-radius:999px;padding:6px 14px;font-size:.85rem;transform:rotate(-8deg);background:var(--gold);color:#2B1B24}
+.s1{top:-14px;left:10px}
+.s2{bottom:-12px;right:20px;transform:rotate(6deg);background:var(--soft-2);color:#2B1B24}
+.balcony{display:flex;gap:6px;justify-content:center;margin:0 auto 18px}
+.balcony i{width:18px;height:26px;border:2px solid var(--gold);border-radius:9px 9px 2px 2px}
+.hearts{color:var(--accent)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.serif{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:"JetBrains Mono",monospace}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.4rem;text-decoration:none}
+.logo span{color:var(--accent)}
+.links{display:flex;gap:26px;align-items:center}
+.links a{text-decoration:none;font-size:.93rem;color:var(--muted);transition:color .2s}
+.links a:hover{color:var(--ink)}
+.icon-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ink);color:var(--bg)}
+.btn-ghost{border:1.5px solid var(--ink)}
+.links .btn{padding:9px 16px;color:var(--bg)}
+@media(max-width:760px){.links a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:80px 0 60px;display:grid;grid-template-columns:1.25fr .9fr;gap:50px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--accent);padding:6px 14px;border-radius:999px;font-size:.82rem;font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.hero h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.05;letter-spacing:-.02em;margin:22px 0}
+
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.photo-card{position:relative;justify-self:center}
+.photo{width:min(340px,80vw);aspect-ratio:4/5;object-fit:cover;border-radius:180px 180px 26px 26px;box-shadow:var(--shadow);display:block}
+.float{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);font-size:.82rem}
+.float b{display:block;font-size:1.3rem;font-family:'Bricolage Grotesque',sans-serif}
+.f1{left:-30px;bottom:50px}
+.f2{right:-24px;top:40px}
+.spark{display:flex;align-items:flex-end;gap:3px;height:28px;margin-top:6px}
+.spark i{width:6px;border-radius:2px;background:var(--accent-2)}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:50px}.f1{left:-10px}.f2{right:-10px}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:16px 0;background:var(--surface)}
+.track{display:flex;gap:44px;width:max-content;animation:scroll 28s linear infinite}
+.track span{font-family:'Bricolage Grotesque',sans-serif;font-size:1.4rem;white-space:nowrap;color:var(--muted)}
+.track span::after{content:"💻";margin-left:44px;color:var(--accent)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+section{padding:90px 0}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:.8rem;color:var(--accent);letter-spacing:.06em}
+h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.015em;margin:10px 0 14px}
+.sub{color:var(--muted);max-width:560px}
+
+/* projects */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 16px;border-radius:999px;cursor:pointer;font:500 .88rem Inter,sans-serif}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card.big{grid-column:span 6;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;padding:0;overflow:hidden}
+.card.half{grid-column:span 3}
+.card.big .shot{background:var(--soft-2);min-height:280px;display:flex;align-items:center;justify-content:center;padding:24px}
+.card.big .shot img{width:100%;border-radius:12px;box-shadow:var(--shadow)}
+.card.big .body{padding:32px 32px 32px 0;display:flex;flex-direction:column}
+.card h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:1.5rem;line-height:1.2;margin:10px 0}
+.card p{color:var(--muted);font-size:.95rem}
+.card ul{margin:14px 0 0 18px;color:var(--muted);font-size:.93rem}
+.stack{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:20px}
+.stack span{font:500 .75rem "JetBrains Mono",monospace;background:var(--bg);border:1px solid var(--line);padding:4px 10px;border-radius:8px}
+.card .acts{display:flex;gap:16px;margin-top:18px}
+.card .acts a{font-weight:600;font-size:.9rem;text-decoration:none;border-bottom:2px solid var(--accent)}
+.badge{align-self:flex-start;font:600 .72rem "JetBrains Mono",monospace;padding:4px 10px;border-radius:8px;background:var(--soft);color:var(--accent)}
+.badge.wip{background:var(--soft-2);color:var(--accent-2)}
+.mini-chart{height:70px;display:flex;align-items:flex-end;gap:6px;margin:18px 0 4px}
+.mini-chart i{flex:1;background:linear-gradient(var(--accent-2),transparent);border-radius:6px 6px 0 0;opacity:.75}
+@media(max-width:760px){.card.big{grid-template-columns:1fr}.card.big .body{padding:0 24px 26px}.card.half{grid-column:span 6}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.about p{font-size:1.08rem;margin-bottom:16px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+.fact .k{font:500 .75rem "JetBrains Mono",monospace;color:var(--muted)}
+.fact .v{font-family:'Bricolage Grotesque',sans-serif;font-size:1.15rem;margin-top:4px}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.skills span{padding:8px 14px;border-radius:999px;background:var(--soft-2);color:var(--accent-2);font-weight:600;font-size:.88rem}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+
+/* certs */
+.timeline{margin-top:36px;border-left:2px dashed var(--line);padding-left:28px;display:grid;gap:26px}
+.cert{position:relative}
+.cert::before{content:"";position:absolute;left:-36px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.cert .meta{font:500 .8rem "JetBrains Mono",monospace;color:var(--muted)}
+.cert h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:1.3rem}
+.cert p{color:var(--muted);font-size:.95rem}
+
+/* contact */
+.contact{background:var(--ink);color:var(--bg);border-radius:32px;padding:60px 40px;text-align:center;position:relative;overflow:hidden}
+.contact h2{color:var(--bg);font-size:clamp(2.2rem,5vw,3.6rem)}
+
+.contact p{opacity:.7;max-width:480px;margin:0 auto 28px}
+.contact .btn-primary{background:var(--accent);color:#fff}
+.contact .btn-ghost{border-color:var(--bg);color:var(--bg)}
+.contact .cta{justify-content:center}
+footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+#progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--accent),var(--gold),var(--accent-2));z-index:20}
+.lang{border:2px solid var(--ink);background:var(--gold);color:#2B1B24;border-radius:999px;padding:6px 12px;font:800 .8rem Inter,sans-serif;cursor:pointer;transition:transform .2s}
+.lang:hover{transform:rotate(-4deg) scale(1.06)}
+.sticker{animation:bob 3.2s ease-in-out infinite}
+.s2{animation-delay:-1.6s}
+.float{animation:bob 4s ease-in-out infinite}.f2{animation-delay:-2s}
+@keyframes bob{50%{translate:0 -10px}}
+.blob{position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(70px);opacity:.35;z-index:-1;animation:drift 14s ease-in-out infinite alternate}
+.b1{background:var(--accent);top:-80px;right:-120px}.b2{background:var(--accent-2);top:260px;left:-160px;animation-delay:-7s}
+@keyframes drift{to{transform:translate(60px,80px) scale(1.15)}}
+.hero{position:relative}
+.mini-chart i,.spark i{transform-origin:bottom;transform:scaleY(0);transition:transform .9s cubic-bezier(.2,.9,.3,1.3)}
+.in .mini-chart i,.spark.in i{transform:scaleY(1)}
+.mini-chart i:nth-child(2){transition-delay:.08s}.mini-chart i:nth-child(3){transition-delay:.16s}.mini-chart i:nth-child(4){transition-delay:.24s}.mini-chart i:nth-child(5){transition-delay:.32s}
+.card{transform-style:preserve-3d;will-change:transform}
+.chip{transition:transform .2s,background .2s}.chip:hover{transform:translateY(-2px)}
+.card.hide{display:none}
+.card.pop{animation:pop .45s ease}
+@keyframes pop{from{opacity:0;transform:scale(.94)}}
+.photo{transition:transform .5s}.photo-card:hover .photo{transform:rotate(-2deg) scale(1.02)}
+.laptop{position:fixed;pointer-events:none;font-size:18px;z-index:30;animation:fly 1s ease-out forwards}
+@keyframes fly{to{transform:translateY(-50px) rotate(20deg);opacity:0}}
+[data-fading]{opacity:0;transition:opacity .2s}
+.kpis{display:grid!important;grid-template-columns:1fr 1fr;gap:12px;align-content:center}
+.kpi{background:var(--surface);border:2px solid var(--ink);border-radius:16px;padding:16px;box-shadow:4px 4px 0 var(--ink)}
+.kpi b{display:block;font:800 2rem 'Bricolage Grotesque',sans-serif;color:var(--accent)}
+.kpi span{font-size:.8rem;color:var(--muted)}
+
+.contact h2{line-height:1.25}
+.contact h2 em{display:inline-block;background:var(--sky)!important;color:#2B1B24!important;padding:2px 16px 6px;border-radius:14px;transform:rotate(-2deg);margin-top:6px;box-shadow:4px 4px 0 var(--gold)}
+.contact{background:linear-gradient(160deg,var(--ink) 55%,#2E4A63)}
+.balcony i{border-color:var(--sky)}
+.balcony i:nth-child(odd){border-color:var(--gold)}
+.hero h1 em{background:linear-gradient(transparent 58%,var(--sky) 58%)}
+.b2{background:var(--sky)!important;opacity:.5}
+#progress{background:linear-gradient(90deg,var(--accent),var(--gold),var(--sky),var(--accent-2))}
+.skills span:nth-child(3n+1){background:var(--sky-soft);color:#1F6E9C}
+.card.big .shot{background:var(--sky-soft)}
+.kpi:nth-child(2) b,.kpi:nth-child(4) b{color:#2B8AC4}
+.track span:nth-child(even){color:#2B8AC4}
+.badge.wip{background:var(--sky-soft);color:#1F6E9C}
+.tag{background:var(--sky-soft);color:#1F6E9C}.dot{background:var(--sky)}
+.f2 .spark i{background:var(--sky)}
+.mini-chart i{background:linear-gradient(var(--sky),transparent)}
+.card:nth-child(even):hover{box-shadow:9px 9px 0 var(--sky)!important}
+.lang{background:var(--sky)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .skills span:nth-child(3n+1),:root:not([data-theme="light"]) .tag,:root:not([data-theme="light"]) .badge.wip{color:var(--sky)}}
+:root[data-theme="dark"] .skills span:nth-child(3n+1),:root[data-theme="dark"] .tag,:root[data-theme="dark"] .badge.wip{color:var(--sky)}
+.afro{flex-direction:column;gap:14px;align-items:stretch!important}
+.map{list-style:none;margin:0;display:grid;gap:8px}
+.map li{display:flex;align-items:center;gap:10px;background:var(--surface);border:2px solid var(--ink);border-radius:12px;padding:8px 12px;font-size:.88rem}
+.map li span{flex:1;font-weight:600}.map li i{font-style:normal;color:var(--muted)}
+.map li b{background:var(--sky);color:#2B1B24;border-radius:8px;padding:2px 10px;font-size:.8rem}
+.map li:nth-child(even) b{background:var(--gold)}
+.note{font-size:.8rem!important;color:var(--muted)}
+.card .lim{font-size:.85rem;margin-top:10px;padding-left:10px;border-left:3px solid var(--sky)}
+.proj-photo{margin:0 0 4px;grid-column:1/-1;background:var(--surface);border:2px solid var(--ink);border-radius:16px;padding:8px 8px 6px;box-shadow:4px 4px 0 var(--ink);transform:rotate(-1.5deg)}
+.proj-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:none!important}
+.proj-photo figcaption{font-size:.75rem;color:var(--muted);text-align:center;padding-top:6px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:40px}
+.polaroid{margin:0;background:#fff;padding:12px 12px 16px;border:2px solid var(--ink);border-radius:6px;box-shadow:6px 6px 0 var(--sky);transition:transform .35s cubic-bezier(.2,.9,.3,1.3)}
+.polaroid:nth-child(odd){transform:rotate(-3deg)}.polaroid:nth-child(even){transform:rotate(2.5deg) translateY(18px);box-shadow:6px 6px 0 var(--gold)}
+.polaroid:hover{transform:rotate(0) scale(1.06)!important;z-index:2;position:relative}
+.polaroid img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;border-radius:2px}
+.polaroid figcaption{font-size:.85rem;color:#2B1B24;text-align:center;padding-top:10px;line-height:1.35}
+@media(max-width:860px){.gallery{grid-template-columns:1fr 1fr;gap:18px}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<nav>
+<div class="wrap">
+<a class="logo" href="#top">mapi<span>.</span></a>
+<div class="links">
+<a data-en="Projects" href="#proyectos">Proyectos</a>
+<a data-en="Experience" href="#experiencia">Experiencia</a>
+<a data-en="Gallery" href="#galeria">Galería</a>
+<a data-en="About me" href="#sobre-mi">Sobre mí</a>
+<button class="lang" id="lang" aria-label="Change language">EN</button>
+<button aria-label="Cambiar tema" class="icon-btn" id="theme">◐</button>
+<a class="btn btn-primary" href="CV_Maria_Pia_Saavedra_Chavez.pdf" target="_blank">CV ↓</a>
+</div>
+</div>
+</nav>
+<header class="wrap hero" id="top">
+<div class="blob b1"></div><div class="blob b2"></div>
+<div>
+<span class="tag" data-en='&lt;span class="dot"&gt;&lt;/span&gt; Now: intern at Pacífico Seguros'><span class="dot"></span> Hoy: practicante en Pacífico Seguros</span>
+<h1 data-en="Hi, I'm Mapi.&lt;br/&gt;I automate the boring stuff and make data &lt;em&gt;tell a story.&lt;/em&gt;">Hola, soy Mapi.<br/>Automatizo lo repetitivo y hago que los datos <em>cuenten algo.</em></h1>
+<p class="lead" data-en="Industrial Engineering student (PUCP, 10th semester) concentrating in Business Analytics. I connect processes and data: I map them, automate them with Python, RPA and Power Automate, and turn everything into KPIs that drive decisions.">Ingeniera Industrial en formación (PUCP, 10mo ciclo) con concentración en Business Analytics. Uno procesos y datos: mapeo, automatizo con Python, RPA y Power Automate, y convierto todo en KPIs que sirven para decidir.</p>
+<div class="cta">
+<a class="btn btn-primary" data-en="See my work →" href="#proyectos">Ver mi trabajo →</a>
+<a class="btn btn-ghost" data-en="Let's talk" href="#contacto">Hablemos</a>
+</div>
+</div>
+<div class="photo-card">
+<img alt="Foto de Mapi" class="photo" src="WhatsApp%20Image%202025-05-12%20at%2015.24.28.jpeg"/>
+<div class="float f1"><span class="mono" data-en="automated processes" style="color:var(--muted)">procesos automatizados</span><b>RPA + Power Automate</b></div>
+<div class="float f2"><span class="mono" data-en="curiosity" style="color:var(--muted)">curiosidad</span>
+<div class="spark"><i style="height:30%"></i><i style="height:45%"></i><i style="height:40%"></i><i style="height:65%"></i><i style="height:80%"></i><i style="height:100%"></i></div>
+</div>
+</div>
+</header>
+<div aria-hidden="true" class="marquee">
+<div class="track">
+<span>Python</span><span>SQL</span><span>R</span><span>Power BI</span><span>RPA</span><span>Power Automate</span><span>Lean</span><span>AS-IS / TO-BE</span><span>KPIs</span>
+<span>Python</span><span>SQL</span><span>R</span><span>Power BI</span><span>RPA</span><span>Power Automate</span><span>Lean</span><span>AS-IS / TO-BE</span><span>KPIs</span>
+</div>
+</div>
+<section id="proyectos">
+<div class="wrap">
+<div class="eyebrow" data-en="01 — PROJECTS">01 — PROYECTOS</div>
+<h2 class="reveal" data-en="Real problems, solutions already running">Problemas reales, soluciones que ya funcionan</h2>
+<p class="sub reveal" data-en="Several of these automations are live today at an insurance company. Each project: the problem, what I did and the impact.">Varias de estas automatizaciones corren hoy en una aseguradora. Cada proyecto: el problema, lo que hice y el impacto.</p>
+<div class="filters">
+<button class="chip on" data-en="All" data-f="all">Todos</button>
+<button class="chip" data-en="Automation" data-f="auto">Automatización</button>
+<button class="chip" data-en="Process improvement" data-f="proc">Mejora de procesos</button>
+<button class="chip" data-f="python">Python</button>
+<button class="chip" data-f="ml">Machine Learning</button>
+<button class="chip" data-f="powerbi">Power BI</button>
+<button class="chip" data-f="sql">SQL</button>
+</div>
+<div class="grid">
+<article class="card half reveal" data-cat="auto">
+<span class="badge" data-en="★ In production · Pacífico">★ En producción · Pacífico</span>
+<div class="mini-chart"><i style="height:95%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:40%"></i><i style="height:22%"></i></div>
+<h3 data-en="RPA for Home insurance claims">RPA para siniestros de Hogar</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; the Home claims workflow had manual, repetitive steps eating up the team's hours.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; mapped the AS-IS process, designed the TO-BE and built an RPA bot that runs those tasks end to end.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; less manual work, fewer data-entry errors and a team focused on cases that need judgment."><b>Problema:</b> el flujo de siniestros de Hogar tenía pasos manuales y repetitivos que consumían horas del equipo.<br/><b>Lo que hice:</b> mapeé el proceso AS-IS, diseñé el TO-BE y desarrollé un bot RPA que ejecuta esas tareas de punta a punta.<br/><b>Impacto:</b> menos carga manual, menos errores de digitación y un equipo enfocado en casos que requieren criterio.</p>
+<div class="stack"><span>RPA</span><span>Python</span><span>Mapeo AS-IS / TO-BE</span></div>
+</article>
+<article class="card half reveal" data-cat="auto">
+<span class="badge" data-en="★ In production · Pacífico">★ En producción · Pacífico</span>
+<div class="mini-chart"><i style="height:30%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:75%"></i><i style="height:100%"></i></div>
+<h3 data-en="Emails that send themselves">Correos que se envían solos</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; follow-up emails were written and sent by hand, with a risk of slipping through.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; Power Automate flows that pull the data, build the email and send it at the right moment.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; on-time, traceable communications with zero manual effort."><b>Problema:</b> correos de seguimiento que se armaban y enviaban a mano, con riesgo de olvidos.<br/><b>Lo que hice:</b> flujos en Power Automate que toman la data, arman el correo y lo envían solos en el momento correcto.<br/><b>Impacto:</b> comunicaciones a tiempo, trazables y sin esfuerzo manual.</p>
+<div class="stack"><span>Power Automate</span><span>Outlook</span><span>Excel</span></div>
+</article>
+<article class="card big reveal" data-cat="proc">
+<div class="shot kpis">
+<figure class="proj-photo"><img src="img/xpostem.jpg" alt="Mapi presentando en XpoSTEM" loading="lazy"><figcaption data-en="Presenting the prototype at XpoSTEM">Presentando el prototipo en XpoSTEM</figcaption></figure>
+<div class="kpi"><b>-78%</b><span data-en="quotation time (4.5h → 1h)">tiempo de cotización (4.5h → 1h)</span></div>
+<div class="kpi"><b>-86%</b><span data-en="inventory error (7% → &lt;1%)">error de inventario (7% → &lt;1%)</span></div>
+<div class="kpi"><b>-80%</b><span data-en="waste (5–10% → &lt;1%)">mermas (5–10% → &lt;1%)</span></div>
+<div class="kpi"><b>35%</b><span data-en="estimated IRR · 2-year payback">TIR estimada · recupero en 2 años</span></div>
+</div>
+<div class="body">
+<span class="badge" data-en="🏆 Presented at XpoSTEM 2025-2">🏆 Expuesto en XpoSTEM 2025-2</span>
+<h3 data-en="Warehouse Optimization · PUCP">Optimización de Almacenes PUCP</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; the warehouse of PUCP's Gastronomy, Hospitality and Tourism faculty had unrecorded inflows, no stock alerts and high waste.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; with my team, diagnosed the critical process (inventory record reconciliation) and designed a solution: OCR + image recognition for intake, a scale connected to a cloud database and a web dashboard.&lt;br/&gt;&lt;b&gt;Impact (projected):&lt;/b&gt; zero Excel rework (3h/week → 0), real-time inventory and S/15,000 in annual benefits on an S/18,000 investment."><b>Problema:</b> el almacén de la Facultad de Gastronomía, Hotelería y Turismo de la PUCP tenía ingresos sin registrar, productos sin alertas y mermas altas.<br/><b>Lo que hice:</b> con mi equipo diagnosticamos el proceso crítico (contrastación del registro de inventarios) y diseñamos la solución: OCR y reconocimiento por imagen para el registro, balanza conectada a una base de datos en la nube y un dashboard web.<br/><b>Impacto (proyectado):</b> cero retrabajo en Excel (3h/semana → 0), inventario actualizado en tiempo real y S/15,000 de beneficios anuales sobre una inversión de S/18,000.</p>
+<div class="stack"><span>Lean</span><span>AS-IS / TO-BE</span><span>OCR</span><span>Dashboard</span><span data-en="Economic evaluation">Evaluación económica</span></div>
+</div>
+</article>
+<article class="card big reveal" data-cat="ml">
+<div class="shot afro">
+<div class="kpi"><b>71%</b><span data-en="accuracy across 8 genres (chance: 12.5%)">accuracy entre 8 géneros (azar: 12,5%)</span></div>
+<ul class="map">
+<li><span>Perú Negro</span><i>→</i><b>Salsa</b></li>
+<li><span>Chabuca Granda</span><i>→</i><b>Tango</b></li>
+<li><span>Susana Baca</span><i>→</i><b>MPB</b></li>
+<li><span>Novalima</span><i>→</i><b data-en="Reggaeton">Reggaetón</b></li>
+</ul>
+<p class="note" data-en="🔎 Rigor: the dataset's “Lucha Reyes” was the Mexican ranchera singer, not the Peruvian one. I removed her before she skewed the results.">🔎 Rigor: la “Lucha Reyes” del dataset era la cantante mexicana de rancheras, no la peruana. La eliminé antes de que distorsionara los resultados.</p>
+</div>
+<div class="body">
+<span class="badge" data-en="🎶 Machine Learning · Personal project">🎶 Machine Learning · Proyecto personal</span>
+<h3 data-en="Where does Afro-Peruvian music land on the Latin map?">¿Dónde cae la música afroperuana en el mapa latino?</h3>
+<p data-en="&lt;b&gt;Idea:&lt;/b&gt; I trained a model to recognize 8 Latin genres (salsa, tango, samba, reggaeton, forró, MPB, pagode, sertanejo) from Spotify audio features, then had it “listen” to Afro-Peruvian music it had never seen.&lt;br/&gt;&lt;b&gt;Data:&lt;/b&gt; ~7,000 reference songs from a 114k Kaggle dataset, 65 Afro-Peruvian tracks from a 1.2M dataset and 28 Peruvian pop songs as a control group.&lt;br/&gt;&lt;b&gt;Finding:&lt;/b&gt; there&#x27;s no single Afro-Peruvian sound, and it&#x27;s more atypical than average Latin music, while Peruvian pop is completely “normal”: what&#x27;s different isn&#x27;t being Peruvian, it&#x27;s the Afro-Peruvian sound."><b>Idea:</b> entrené un modelo para reconocer 8 géneros latinos (salsa, tango, samba, reggaetón, forró, MPB, pagode y sertanejo) con las características de audio de Spotify, y luego le hice “escuchar” música afroperuana que nunca vio.<br/><b>Datos:</b> ~7 000 canciones de referencia de un dataset de Kaggle de 114 000, 65 canciones afroperuanas de otro de 1,2 millones y 28 de pop peruano como grupo de control.<br/><b>Hallazgo:</b> no hay un solo sonido afroperuano, y es más atípico que la música latina promedio, mientras que el pop peruano es completamente “normal”: lo distinto no es ser peruano, es el sonido afroperuano.</p>
+<p class="lim" data-en="Compared 3 classifiers; Gradient Boosting won. Tango and reggaeton are the easiest to recognize; Brazilian genres get confused with each other. Limitations: small Peruvian sample, no cumbia or chicha, and Spotify features don't capture specific rhythms like the cajón's.">Comparé 3 clasificadores; ganó Gradient Boosting. Tango y reggaetón son los más fáciles de reconocer; los géneros brasileños se confunden entre sí. Limitaciones: muestra peruana pequeña, sin cumbia ni chicha, y las características de Spotify no captan ritmos como el del cajón.</p>
+<div class="stack"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>UMAP</span><span>matplotlib</span></div>
+</div>
+</article>
+<article class="card big reveal" data-cat="python">
+<div class="shot"><img alt="Gráfico del monitor de precios" src="img/proyecto-destacado.png"/></div>
+<div class="body">
+<span class="badge" data-en="Personal project">Proyecto personal</span>
+<h3 data-en="A crypto price monitor that runs itself">Monitor de precios cripto que corre solo</h3>
+<p data-en="Can I catch a price drop without watching the market all day? This script fetches prices, stores history, plots it and fires alerts — automatically, every day.">¿Puedo enterarme de una caída de precio sin mirar el mercado todo el día? Este script consulta precios, guarda el histórico, grafica y lanza alertas — todo en automático cada día.</p>
+<ul>
+<li data-en="Daily CSV history + updated chart">Histórico diario en CSV + gráfico actualizado</li>
+<li data-en="YAML-configurable, no API keys">Configurable por YAML, sin API keys</li>
+<li data-en="GitHub Actions pipeline that commits results">Pipeline con GitHub Actions que hace commit de resultados</li>
+</ul>
+<div class="stack"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>GitHub Actions</span></div>
+<div class="acts"><a data-en="Code ↗" href="https://github.com/tuusuario/price-monitor" target="_blank">Código ↗</a><a href="https://tuusuario.github.io/price-monitor" target="_blank">Demo ↗</a></div>
+</div>
+</article>
+<article class="card half reveal" data-cat="python">
+<span class="badge">Pacífico</span>
+<div class="mini-chart"><i style="height:50%"></i><i style="height:65%"></i><i style="height:58%"></i><i style="height:82%"></i><i style="height:74%"></i></div>
+<h3 data-en="Salvage sales analysis">Análisis de venta de salvamentos</h3>
+<p data-en="&lt;b&gt;Question:&lt;/b&gt; where is value lost when a totaled vehicle goes to auction?&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; merged and analyzed auction-process data with Python and advanced Excel.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; actionable findings to improve turnaround and business decisions."><b>Pregunta:</b> ¿dónde se pierde valor cuando un vehículo siniestrado se subasta?<br/><b>Lo que hice:</b> crucé y analicé datos del proceso con subastadoras en Python y Excel avanzado.<br/><b>Impacto:</b> hallazgos accionables para mejorar tiempos y decisiones del negocio.</p>
+<div class="stack"><span>Python</span><span>Excel avanzado</span></div>
+</article>
+<article class="card half reveal" data-cat="sql">
+<span class="badge">Directo</span>
+<div class="mini-chart"><i style="height:70%"></i><i style="height:45%"></i><i style="height:85%"></i><i style="height:35%"></i><i style="height:60%"></i></div>
+<h3 data-en="Error patterns with SQL">Patrones de error con SQL</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; recurring errors with no clear cause.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; advanced SQL queries to measure patterns, plus root-cause and 5W2H analysis.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; data-prioritized improvements and better user onboarding."><b>Problema:</b> errores recurrentes sin una causa clara.<br/><b>Lo que hice:</b> consultas SQL avanzadas para medir patrones, más análisis causa-raíz y 5W2H.<br/><b>Impacto:</b> mejoras priorizadas con datos y mejor onboarding de usuarios.</p>
+<div class="stack"><span>SQL</span><span>Lean</span><span>Jira</span></div>
+</article>
+<article class="card half reveal" data-cat="powerbi">
+<span class="badge wip" data-en="● Work in progress">● En construcción</span>
+<div class="mini-chart"><i style="height:40%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:65%"></i></div>
+<h3 data-en="Sales dashboard">Dashboard de ventas</h3>
+<p data-en="Revenue and margin KPIs by region, with interactive filters to find where you win (and where you lose).">KPIs de ingresos y margen por región, con filtros interactivos para encontrar dónde se gana (y dónde se pierde).</p>
+<div class="stack"><span>Power BI</span><span>DAX</span></div>
+</article>
+<article class="card half reveal" data-cat="sql">
+<span class="badge wip" data-en="● Work in progress">● En construcción</span>
+<div class="mini-chart"><i style="height:85%"></i><i style="height:60%"></i><i style="height:75%"></i><i style="height:45%"></i><i style="height:70%"></i></div>
+<h3 data-en="Financial metrics in SQL">Métricas financieras en SQL</h3>
+<p data-en="Modeling and queries to measure profitability and liquidity from transactional data.">Modelado y consultas para medir rentabilidad y liquidez a partir de datos transaccionales.</p>
+<div class="stack"><span>SQL</span><span>Modelado</span></div>
+</article>
+</div>
+</div>
+</section>
+<section id="sobre-mi" style="padding-top:20px">
+<div class="wrap about">
+<div>
+<div class="eyebrow" data-en="02 — ABOUT ME">02 — SOBRE MÍ</div>
+<h2 class="reveal" data-en="A bit about me, beyond Excel">Un poco de mí, más allá del Excel</h2>
+<p data-en="I'm María Pia, but everyone calls me Mapi. I study Industrial Engineering at PUCP and found that what I love most is the point where a process meets its data.">Soy María Pia, pero todos me dicen Mapi. Estudio Ingeniería Industrial en la PUCP y descubrí que lo que más me gusta es ese punto donde un proceso y sus datos se encuentran.</p>
+<p data-en="I think like a process engineer (Lean, AS-IS / TO-BE, continuous improvement) and work like an analyst: SQL to understand, Python and Power Automate to automate, Power BI to tell the story. I also love organizing people: I led teams in the student council and the Industrial Engineering association." style="color:var(--muted)">Pienso como ingeniera de procesos (Lean, AS-IS / TO-BE, mejora continua) y trabajo como analista: SQL para entender, Python y Power Automate para automatizar, Power BI para contarlo. También me encanta organizar personas: lideré equipos en el Centro Federado y en la asociación de Ingeniería Industrial.</p>
+<div class="skills"><span>Python</span><span>SQL</span><span>R</span><span>Power BI</span><span>Excel</span><span>Power Automate</span><span>RPA</span><span>pandas · scikit-learn</span><span>Jira · Confluence</span><span>Scrum · Kanban</span><span>Git</span></div>
+</div>
+<div class="facts reveal">
+<div class="fact"><div class="k" data-en="based in">base</div><div class="v" data-en="Lima, Peru 🇵🇪">Lima, Perú 🇵🇪</div></div>
+<div class="fact"><div class="k" data-en="studying">estudio</div><div class="v" data-en="Industrial Eng. · PUCP&lt;br/&gt;&lt;small&gt;Business Analytics concentration&lt;/small&gt;">Ing. Industrial · PUCP<br/><small>Concentración Business Analytics</small></div></div>
+<div class="fact"><div class="k" data-en="languages">idiomas</div><div class="v" data-en="Spanish · English · 한국어 · Français">Español · Inglés · 한국어 · Français</div></div>
+<div class="fact"><div class="k" data-en="heading to">rumbo</div><div class="v">Data Science</div></div>
+<div class="fact"><div class="k" data-en="perfect plan">mi plan perfecto</div><div class="v" data-en="Walking historic downtown Lima 🏛️">Caminar el Centro de Lima 🏛️</div></div>
+</div>
+</div>
+</section>
+<section id="experiencia" style="padding-top:20px">
+<div class="wrap">
+<div class="eyebrow" data-en="03 — EXPERIENCE">03 — EXPERIENCIA</div>
+<h2 class="reveal" data-en="Where I learned by doing">Dónde he aprendido haciendo</h2>
+<div class="timeline">
+<div class="cert reveal"><div class="meta" data-en="Sep 2025 – now · San Isidro">Set 2025 – hoy · San Isidro</div><h4 data-en="Pacífico Seguros — Auto Claims Intern">Pacífico Seguros — Practicante de Siniestros Vehiculares</h4><p data-en="Management KPIs and reports, automations with Python, RPA and Power Automate, AS-IS / TO-BE mapping and salvage sales analysis.">KPIs y reportes de gestión, automatizaciones con Python, RPA y Power Automate, mapeo AS-IS / TO-BE y análisis de venta de salvamentos.</p></div>
+<div class="cert reveal"><div class="meta" data-en="Jan – Aug 2025 · Miraflores">Ene – Ago 2025 · Miraflores</div><h4 data-en="Directo — IT Documentation Intern">Directo — Practicante de Documentación TI</h4><p data-en="SQL for metrics and error patterns, Lean and root cause, KPIs and functional documentation in an agile team using Jira.">SQL para métricas y patrones de error, Lean y causa-raíz, KPIs y documentación funcional en un equipo ágil con Jira.</p></div>
+<div class="cert reveal"><div class="meta">2022 – 2023 · PUCP</div><h4 data-en="Student leadership">Liderazgo estudiantil</h4><p data-en="Organization Secretary at the PUCP Sciences student council and Assistant HR Coordinator at the Industrial Engineering association: tracking systems, events and recruiting.">Secretaria de Organización del CF de EEGGCC y Coordinadora Adjunta de Talento Humano en la asociación de Ing. Industrial: sistemas de seguimiento, eventos y selección.</p></div>
+</div>
+</div>
+</section>
+<section id="aprendizaje" style="padding-top:20px">
+<div class="wrap">
+<div class="eyebrow" data-en="04 — LEARNING">04 — APRENDIZAJE</div>
+<h2 class="reveal" data-en="Always learning">Siempre aprendiendo</h2>
+<div class="timeline">
+<div class="cert reveal"><div class="meta" data-en="PUCP · Concentration">PUCP · Concentración</div><h4>Business Analytics</h4><p data-en="Marketing Analytics, Supply Chain Analytics, People &amp;amp; Social Network Analytics and Data Translation &amp;amp; Storytelling.">Marketing Analytics, Supply Chain Analytics, People &amp; Social Network Analytics y Data Translation &amp; Storytelling.</p></div>
+<div class="cert reveal"><div class="meta">IBM · 2024</div><h4>Data Analysis with Python</h4><p data-en="Pandas, visualization and statistics for exploratory analysis.">Pandas, visualización y estadística para análisis exploratorio.</p></div>
+<div class="cert reveal"><div class="meta">Coursera · 2023</div><h4>SQL for Data Science</h4><p data-en="Queries, joins, aggregations and schema design for reporting.">Consultas, joins, agregaciones y diseño de esquemas para reporting.</p></div>
+<div class="cert reveal"><div class="meta">Microsoft · 2022</div><h4 data-en="Advanced Excel">Excel Avanzado</h4><p data-en="Modeling, pivot tables, validation and nested functions.">Modelado, tablas dinámicas, validación y funciones anidadas.</p></div>
+</div>
+</div>
+</section>
+<section id="galeria" style="padding-top:20px">
+<div class="wrap">
+<div class="eyebrow" data-en="✦ BEHIND THE DATA">✦ DETRÁS DE LOS DATOS</div>
+<h2 class="reveal" data-en="Real moments, not just dashboards">Momentos reales, no solo dashboards</h2>
+<div class="gallery">
+<figure class="polaroid reveal"><img src="img/xpostem.jpg" alt="XpoSTEM 2025-2" loading="lazy"><figcaption data-en="Showing our warehouse solution at XpoSTEM 2025-2">Mostrando nuestra solución de almacenes en XpoSTEM 2025-2</figcaption></figure>
+<figure class="polaroid reveal"><img src="img/oficina.jpg" alt="Mapi en su escritorio" loading="lazy"><figcaption data-en="My spot, where the bots get built 💻">Mi lugar, donde se arman los bots 💻</figcaption></figure>
+<figure class="polaroid reveal"><img src="img/dia-practicante.jpg" alt="Día del Practicante en Pacífico" loading="lazy"><figcaption data-en="Intern Day at Pacífico Seguros">Día del Practicante en Pacífico Seguros</figcaption></figure>
+<figure class="polaroid reveal"><img src="img/pacifico.jpg" alt="Mapi en Pacífico Seguros" loading="lazy"><figcaption data-en="One more day at Pacífico 💙">Un día más en Pacífico 💙</figcaption></figure>
+</div>
+</div>
+</section>
+<section id="contacto">
+<div class="wrap">
+<div class="contact reveal">
+<div aria-hidden="true" class="balcony"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="eyebrow" data-en="05 — CONTACT" style="color:var(--accent)">05 — CONTACTO</div>
+<h2 data-en="Got a process begging to be &lt;em&gt;automated?&lt;/em&gt;">¿Un proceso que pide a gritos <em>automatizarse?</em></h2>
+<p data-en="I love talking data, processes and automation. Write me, I reply fast.">Me encanta conversar de datos, procesos y automatización. Escríbeme, respondo rápido.</p>
+<div class="cta">
+<a class="btn btn-primary" data-en="Email me ✉" href="mailto:mariapiasaavedrachavez@gmail.com">Escríbeme ✉</a>
+<a class="btn btn-ghost" href="https://www.linkedin.com/in/mariapiasaavedra111/" target="_blank">LinkedIn ↗</a>
+</div>
+</div>
+</div>
+</section>
+<footer data-en="Made with data and a lot of coffee by Mapi 💻 · Lima, <span class='yr'></span>">Hecho con datos y mucho café por Mapi 💻 · Lima, <span class="yr"></span></footer>
+<script>
+const setYear=()=>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());setYear();
+const T=document.querySelectorAll('[data-en]');T.forEach(e=>e.dataset.es=e.innerHTML);
+let lang='es';try{lang=localStorage.getItem('lang')||'es'}catch(e){}
+const applyLang=(l,anim)=>{lang=l;document.documentElement.lang=l;
+  const run=()=>{T.forEach(e=>e.innerHTML=e.dataset[l]);setYear();document.getElementById('lang').textContent=l==='es'?'EN':'ES';document.body.removeAttribute('data-fading')};
+  if(anim){document.body.setAttribute('data-fading','');setTimeout(run,200)}else run();
+  try{localStorage.setItem('lang',l)}catch(e){}};
+if(lang==='en')applyLang('en');
+document.getElementById('lang').onclick=()=>applyLang(lang==='es'?'en':'es',true);
+const bar=document.getElementById('progress');
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+const fine=matchMedia('(hover:hover)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(fine){document.querySelectorAll('.card').forEach(c=>{
+  c.addEventListener('mousemove',ev=>{const r=c.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width-.5,y=(ev.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateY(${x*6}deg) rotateX(${-y*6}deg) translate(-3px,-3px)`});
+  c.addEventListener('mouseleave',()=>c.style.transform='')});
+ document.addEventListener('click',ev=>{for(let i=0;i<3;i++){const l=document.createElement('span');l.className='laptop';l.textContent='💻';l.style.left=(ev.clientX+(Math.random()*40-20))+'px';l.style.top=(ev.clientY-10)+'px';l.style.animationDelay=i*.06+'s';document.body.appendChild(l);setTimeout(()=>l.remove(),1200)}});}
+const root=document.documentElement;
+try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t;}catch(e){}
+document.getElementById('theme').onclick=()=>{
+  const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme=dark?'light':'dark';
+  try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
+};
+document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+  document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');
+  document.querySelectorAll('.card').forEach(k=>{const show=c.dataset.f==='all'||k.dataset.cat===c.dataset.f;k.classList.toggle('hide',!show);if(show){k.classList.remove('pop');void k.offsetWidth;k.classList.add('pop')}});
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal,.spark').forEach((el,i)=>{el.style.transitionDelay=(i%3)*0.08+'s';io.observe(el)});
+</script>
 </body>
 </html>
-
