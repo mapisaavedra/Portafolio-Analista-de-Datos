@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Mapi · Analista de Datos</title>
-<meta content="Portafolio de Mapi (María Pia Saavedra): análisis de datos con Python, SQL, Excel y Power BI." name="description"/>
-<meta content="Mapi · Analista de Datos" property="og:title"/>
-<meta content="Convierto datos en decisiones claras." property="og:description"/>
+<title>Mapi · Data Science &amp; IA</title>
+<meta content="Portafolio de Mapi (María Pia Saavedra): machine learning, automatización con IA y análisis de datos." name="description"/>
+<meta content="Mapi · Data Science &amp; IA" property="og:title"/>
+<meta content="Construyo modelos y automatizo procesos con datos e IA." property="og:description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <style>
@@ -218,7 +218,41 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 .polaroid img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;border-radius:2px}
 .polaroid figcaption{font-size:.85rem;color:#2B1B24;text-align:center;padding-top:10px;line-height:1.35}
 @media(max-width:860px){.gallery{grid-template-columns:1fr 1fr;gap:18px}}
-</style>
+/*DARK*/:root[data-theme="dark"]{--bg:#0E1726;--surface:#16233A;--ink:#EEF4FB;--muted:#A3B4CB;--line:#253655;--accent:#FF6F7D;--accent-2:#B49CFF;--gold:#FFD27A;--sky:#7FD3FF;--sky-soft:#143049;--soft:#3A1F2E;--soft-2:#1D2448;--shadow:6px 6px 0 #000;--a2c:#B49CFF}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0E1726;--surface:#16233A;--ink:#EEF4FB;--muted:#A3B4CB;--line:#253655;--accent:#FF6F7D;--accent-2:#B49CFF;--gold:#FFD27A;--sky:#7FD3FF;--sky-soft:#143049;--soft:#3A1F2E;--soft-2:#1D2448;--shadow:6px 6px 0 #000;--a2c:#B49CFF}}
+:root[data-theme="dark"] .card,:root[data-theme="dark"] .fact,:root[data-theme="dark"] .float,:root[data-theme="dark"] .photo,:root[data-theme="dark"] .kpi,:root[data-theme="dark"] .map li,:root[data-theme="dark"] .proj-photo{border-color:var(--line)!important;box-shadow:6px 6px 0 rgba(0,0,0,.45)}
+:root[data-theme="dark"] .contact{background:linear-gradient(150deg,#1B2C4A 10%,#0F3A55 100%);color:var(--ink);border:2px solid var(--line)}
+:root[data-theme="dark"] .contact h2,:root[data-theme="dark"] .contact p{color:var(--ink)}
+:root[data-theme="dark"] .contact .btn-ghost{border-color:var(--ink);color:var(--ink)}
+:root[data-theme="dark"] .btn-primary{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn-ghost{border-color:var(--ink)}
+:root[data-theme="dark"] .hero h1 em{color:var(--ink)!important;background:linear-gradient(transparent 60%,#FF6F7D66 60%)}
+:root[data-theme="dark"] .polaroid{background:#FFFDF8}
+:root[data-theme="dark"] .kpi b,:root[data-theme="dark"] .kpi:nth-child(2) b,:root[data-theme="dark"] .kpi:nth-child(4) b{color:var(--sky)}
+:root[data-theme="dark"] .kpi:nth-child(odd) b{color:var(--accent)}
+:root[data-theme="dark"] .track span:nth-child(even){color:var(--sky)}
+:root[data-theme="dark"] .skills span{background:var(--soft-2);color:var(--a2c)}
+:root[data-theme="dark"] .skills span:nth-child(3n+1),:root[data-theme="dark"] .tag,:root[data-theme="dark"] .badge.wip{background:var(--sky-soft);color:var(--sky)}
+:root[data-theme="dark"] .stack span{background:var(--bg);border-color:var(--line);color:var(--muted)}
+:root[data-theme="dark"] .chip.on{background:var(--ink);color:var(--bg)}
+:root[data-theme="dark"] body{background-image:radial-gradient(rgba(255,255,255,.05) 1.2px,transparent 1.2px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .card,:root:not([data-theme="light"]) .fact,:root:not([data-theme="light"]) .float,:root:not([data-theme="light"]) .photo,:root:not([data-theme="light"]) .kpi,:root:not([data-theme="light"]) .map li,:root:not([data-theme="light"]) .proj-photo{border-color:var(--line)!important;box-shadow:6px 6px 0 rgba(0,0,0,.45)}
+:root:not([data-theme="light"]) .contact{background:linear-gradient(150deg,#1B2C4A 10%,#0F3A55 100%);color:var(--ink);border:2px solid var(--line)}
+:root:not([data-theme="light"]) .contact h2,:root:not([data-theme="light"]) .contact p{color:var(--ink)}
+:root:not([data-theme="light"]) .contact .btn-ghost{border-color:var(--ink);color:var(--ink)}
+:root:not([data-theme="light"]) .btn-primary{background:var(--accent);color:#fff}
+:root:not([data-theme="light"]) .btn-ghost{border-color:var(--ink)}
+:root:not([data-theme="light"]) .hero h1 em{color:var(--ink)!important;background:linear-gradient(transparent 60%,#FF6F7D66 60%)}
+:root:not([data-theme="light"]) .polaroid{background:#FFFDF8}
+:root:not([data-theme="light"]) .kpi b,:root:not([data-theme="light"]) .kpi:nth-child(2) b,:root:not([data-theme="light"]) .kpi:nth-child(4) b{color:var(--sky)}
+:root:not([data-theme="light"]) .kpi:nth-child(odd) b{color:var(--accent)}
+:root:not([data-theme="light"]) .track span:nth-child(even){color:var(--sky)}
+:root:not([data-theme="light"]) .skills span{background:var(--soft-2);color:var(--a2c)}
+:root:not([data-theme="light"]) .skills span:nth-child(3n+1),:root:not([data-theme="light"]) .tag,:root:not([data-theme="light"]) .badge.wip{background:var(--sky-soft);color:var(--sky)}
+:root:not([data-theme="light"]) .stack span{background:var(--bg);border-color:var(--line);color:var(--muted)}
+:root:not([data-theme="light"]) .chip.on{background:var(--ink);color:var(--bg)}
+:root:not([data-theme="light"]) body{background-image:radial-gradient(rgba(255,255,255,.05) 1.2px,transparent 1.2px)}}
+/*ENDDARK*/</style>
 </head>
 <body>
 <div id="progress"></div>
@@ -230,7 +264,7 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <a data-en="Experience" href="#experiencia">Experiencia</a>
 <a data-en="Gallery" href="#galeria">Galería</a>
 <a data-en="About me" href="#sobre-mi">Sobre mí</a>
-<button class="lang" id="lang" aria-label="Change language">EN</button>
+<button aria-label="Change language" class="lang" id="lang">EN</button>
 <button aria-label="Cambiar tema" class="icon-btn" id="theme">◐</button>
 <a class="btn btn-primary" href="CV_Maria_Pia_Saavedra_Chavez.pdf" target="_blank">CV ↓</a>
 </div>
@@ -240,8 +274,8 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="blob b1"></div><div class="blob b2"></div>
 <div>
 <span class="tag" data-en='&lt;span class="dot"&gt;&lt;/span&gt; Now: intern at Pacífico Seguros'><span class="dot"></span> Hoy: practicante en Pacífico Seguros</span>
-<h1 data-en="Hi, I'm Mapi.&lt;br/&gt;I automate the boring stuff and make data &lt;em&gt;tell a story.&lt;/em&gt;">Hola, soy Mapi.<br/>Automatizo lo repetitivo y hago que los datos <em>cuenten algo.</em></h1>
-<p class="lead" data-en="Industrial Engineering student (PUCP, 10th semester) concentrating in Business Analytics. I connect processes and data: I map them, automate them with Python, RPA and Power Automate, and turn everything into KPIs that drive decisions.">Ingeniera Industrial en formación (PUCP, 10mo ciclo) con concentración en Business Analytics. Uno procesos y datos: mapeo, automatizo con Python, RPA y Power Automate, y convierto todo en KPIs que sirven para decidir.</p>
+<h1 data-en="Hi, I'm Mapi.&lt;br/&gt;I build models and automate processes with &lt;em&gt;data &amp;amp; AI.&lt;/em&gt;">Hola, soy Mapi.<br/>Construyo modelos y automatizo procesos con <em>datos e IA.</em></h1>
+<p class="lead" data-en="Industrial Engineering student (PUCP, 10th semester) concentrating in Business Analytics, focused on Data Science and AI. I train machine learning models, automate real processes with Python, RPA and Power Automate, and turn data into decisions.">Ingeniera Industrial (PUCP, 10mo ciclo) con concentración en Business Analytics, enfocada en Data Science e IA. Entreno modelos de machine learning, automatizo procesos reales con Python, RPA y Power Automate, y convierto datos en decisiones.</p>
 <div class="cta">
 <a class="btn btn-primary" data-en="See my work →" href="#proyectos">Ver mi trabajo →</a>
 <a class="btn btn-ghost" data-en="Let's talk" href="#contacto">Hablemos</a>
@@ -249,62 +283,22 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 </div>
 <div class="photo-card">
 <img alt="Foto de Mapi" class="photo" src="WhatsApp%20Image%202025-05-12%20at%2015.24.28.jpeg"/>
-<div class="float f1"><span class="mono" data-en="automated processes" style="color:var(--muted)">procesos automatizados</span><b>RPA + Power Automate</b></div>
+<div class="float f1"><span class="mono" data-en="model accuracy" style="color:var(--muted)">accuracy del modelo</span><b data-en="71% · 8 genres">71% · 8 géneros</b></div>
 <div class="float f2"><span class="mono" data-en="curiosity" style="color:var(--muted)">curiosidad</span>
 <div class="spark"><i style="height:30%"></i><i style="height:45%"></i><i style="height:40%"></i><i style="height:65%"></i><i style="height:80%"></i><i style="height:100%"></i></div>
 </div>
 </div>
 </header>
 <div aria-hidden="true" class="marquee">
-<div class="track">
-<span>Python</span><span>SQL</span><span>R</span><span>Power BI</span><span>RPA</span><span>Power Automate</span><span>Lean</span><span>AS-IS / TO-BE</span><span>KPIs</span>
-<span>Python</span><span>SQL</span><span>R</span><span>Power BI</span><span>RPA</span><span>Power Automate</span><span>Lean</span><span>AS-IS / TO-BE</span><span>KPIs</span>
-</div>
+<div class="track"><span>Machine Learning</span><span>Python</span><span>scikit-learn</span><span>IA</span><span>SQL</span><span>RPA</span><span>Power Automate</span><span>UMAP</span><span>Power BI</span><span>KPIs</span><span>Machine Learning</span><span>Python</span><span>scikit-learn</span><span>IA</span><span>SQL</span><span>RPA</span><span>Power Automate</span><span>UMAP</span><span>Power BI</span><span>KPIs</span></div>
 </div>
 <section id="proyectos">
 <div class="wrap">
 <div class="eyebrow" data-en="01 — PROJECTS">01 — PROYECTOS</div>
 <h2 class="reveal" data-en="Real problems, solutions already running">Problemas reales, soluciones que ya funcionan</h2>
-<p class="sub reveal" data-en="Several of these automations are live today at an insurance company. Each project: the problem, what I did and the impact.">Varias de estas automatizaciones corren hoy en una aseguradora. Cada proyecto: el problema, lo que hice y el impacto.</p>
-<div class="filters">
-<button class="chip on" data-en="All" data-f="all">Todos</button>
-<button class="chip" data-en="Automation" data-f="auto">Automatización</button>
-<button class="chip" data-en="Process improvement" data-f="proc">Mejora de procesos</button>
-<button class="chip" data-f="python">Python</button>
-<button class="chip" data-f="ml">Machine Learning</button>
-<button class="chip" data-f="powerbi">Power BI</button>
-<button class="chip" data-f="sql">SQL</button>
-</div>
+<p class="sub reveal" data-en="Machine learning, automations running today at an insurance company, and process improvement with measurable impact.">Machine learning, automatizaciones que hoy corren en una aseguradora y mejora de procesos con impacto medible.</p>
+<div class="filters"><button class="chip on" data-en="All" data-f="all">Todos</button><button class="chip" data-en="Machine Learning" data-f="ml">Machine Learning</button><button class="chip" data-en="AI" data-f="ai">IA</button><button class="chip" data-en="Automation" data-f="auto">Automatización</button><button class="chip" data-en="Process improvement" data-f="proc">Mejora de procesos</button><button class="chip" data-en="Python" data-f="python">Python</button><button class="chip" data-en="SQL" data-f="sql">SQL</button><button class="chip" data-en="Data Engineering" data-f="eng">Data Engineering</button></div>
 <div class="grid">
-<article class="card half reveal" data-cat="auto">
-<span class="badge" data-en="★ In production · Pacífico">★ En producción · Pacífico</span>
-<div class="mini-chart"><i style="height:95%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:40%"></i><i style="height:22%"></i></div>
-<h3 data-en="RPA for Home insurance claims">RPA para siniestros de Hogar</h3>
-<p data-en="&lt;b&gt;Problem:&lt;/b&gt; the Home claims workflow had manual, repetitive steps eating up the team's hours.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; mapped the AS-IS process, designed the TO-BE and built an RPA bot that runs those tasks end to end.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; less manual work, fewer data-entry errors and a team focused on cases that need judgment."><b>Problema:</b> el flujo de siniestros de Hogar tenía pasos manuales y repetitivos que consumían horas del equipo.<br/><b>Lo que hice:</b> mapeé el proceso AS-IS, diseñé el TO-BE y desarrollé un bot RPA que ejecuta esas tareas de punta a punta.<br/><b>Impacto:</b> menos carga manual, menos errores de digitación y un equipo enfocado en casos que requieren criterio.</p>
-<div class="stack"><span>RPA</span><span>Python</span><span>Mapeo AS-IS / TO-BE</span></div>
-</article>
-<article class="card half reveal" data-cat="auto">
-<span class="badge" data-en="★ In production · Pacífico">★ En producción · Pacífico</span>
-<div class="mini-chart"><i style="height:30%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:75%"></i><i style="height:100%"></i></div>
-<h3 data-en="Emails that send themselves">Correos que se envían solos</h3>
-<p data-en="&lt;b&gt;Problem:&lt;/b&gt; follow-up emails were written and sent by hand, with a risk of slipping through.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; Power Automate flows that pull the data, build the email and send it at the right moment.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; on-time, traceable communications with zero manual effort."><b>Problema:</b> correos de seguimiento que se armaban y enviaban a mano, con riesgo de olvidos.<br/><b>Lo que hice:</b> flujos en Power Automate que toman la data, arman el correo y lo envían solos en el momento correcto.<br/><b>Impacto:</b> comunicaciones a tiempo, trazables y sin esfuerzo manual.</p>
-<div class="stack"><span>Power Automate</span><span>Outlook</span><span>Excel</span></div>
-</article>
-<article class="card big reveal" data-cat="proc">
-<div class="shot kpis">
-<figure class="proj-photo"><img src="img/xpostem.jpg" alt="Mapi presentando en XpoSTEM" loading="lazy"><figcaption data-en="Presenting the prototype at XpoSTEM">Presentando el prototipo en XpoSTEM</figcaption></figure>
-<div class="kpi"><b>-78%</b><span data-en="quotation time (4.5h → 1h)">tiempo de cotización (4.5h → 1h)</span></div>
-<div class="kpi"><b>-86%</b><span data-en="inventory error (7% → &lt;1%)">error de inventario (7% → &lt;1%)</span></div>
-<div class="kpi"><b>-80%</b><span data-en="waste (5–10% → &lt;1%)">mermas (5–10% → &lt;1%)</span></div>
-<div class="kpi"><b>35%</b><span data-en="estimated IRR · 2-year payback">TIR estimada · recupero en 2 años</span></div>
-</div>
-<div class="body">
-<span class="badge" data-en="🏆 Presented at XpoSTEM 2025-2">🏆 Expuesto en XpoSTEM 2025-2</span>
-<h3 data-en="Warehouse Optimization · PUCP">Optimización de Almacenes PUCP</h3>
-<p data-en="&lt;b&gt;Problem:&lt;/b&gt; the warehouse of PUCP's Gastronomy, Hospitality and Tourism faculty had unrecorded inflows, no stock alerts and high waste.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; with my team, diagnosed the critical process (inventory record reconciliation) and designed a solution: OCR + image recognition for intake, a scale connected to a cloud database and a web dashboard.&lt;br/&gt;&lt;b&gt;Impact (projected):&lt;/b&gt; zero Excel rework (3h/week → 0), real-time inventory and S/15,000 in annual benefits on an S/18,000 investment."><b>Problema:</b> el almacén de la Facultad de Gastronomía, Hotelería y Turismo de la PUCP tenía ingresos sin registrar, productos sin alertas y mermas altas.<br/><b>Lo que hice:</b> con mi equipo diagnosticamos el proceso crítico (contrastación del registro de inventarios) y diseñamos la solución: OCR y reconocimiento por imagen para el registro, balanza conectada a una base de datos en la nube y un dashboard web.<br/><b>Impacto (proyectado):</b> cero retrabajo en Excel (3h/semana → 0), inventario actualizado en tiempo real y S/15,000 de beneficios anuales sobre una inversión de S/18,000.</p>
-<div class="stack"><span>Lean</span><span>AS-IS / TO-BE</span><span>OCR</span><span>Dashboard</span><span data-en="Economic evaluation">Evaluación económica</span></div>
-</div>
-</article>
 <article class="card big reveal" data-cat="ml">
 <div class="shot afro">
 <div class="kpi"><b>71%</b><span data-en="accuracy across 8 genres (chance: 12.5%)">accuracy entre 8 géneros (azar: 12,5%)</span></div>
@@ -319,55 +313,65 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="body">
 <span class="badge" data-en="🎶 Machine Learning · Personal project">🎶 Machine Learning · Proyecto personal</span>
 <h3 data-en="Where does Afro-Peruvian music land on the Latin map?">¿Dónde cae la música afroperuana en el mapa latino?</h3>
-<p data-en="&lt;b&gt;Idea:&lt;/b&gt; I trained a model to recognize 8 Latin genres (salsa, tango, samba, reggaeton, forró, MPB, pagode, sertanejo) from Spotify audio features, then had it “listen” to Afro-Peruvian music it had never seen.&lt;br/&gt;&lt;b&gt;Data:&lt;/b&gt; ~7,000 reference songs from a 114k Kaggle dataset, 65 Afro-Peruvian tracks from a 1.2M dataset and 28 Peruvian pop songs as a control group.&lt;br/&gt;&lt;b&gt;Finding:&lt;/b&gt; there&#x27;s no single Afro-Peruvian sound, and it&#x27;s more atypical than average Latin music, while Peruvian pop is completely “normal”: what&#x27;s different isn&#x27;t being Peruvian, it&#x27;s the Afro-Peruvian sound."><b>Idea:</b> entrené un modelo para reconocer 8 géneros latinos (salsa, tango, samba, reggaetón, forró, MPB, pagode y sertanejo) con las características de audio de Spotify, y luego le hice “escuchar” música afroperuana que nunca vio.<br/><b>Datos:</b> ~7 000 canciones de referencia de un dataset de Kaggle de 114 000, 65 canciones afroperuanas de otro de 1,2 millones y 28 de pop peruano como grupo de control.<br/><b>Hallazgo:</b> no hay un solo sonido afroperuano, y es más atípico que la música latina promedio, mientras que el pop peruano es completamente “normal”: lo distinto no es ser peruano, es el sonido afroperuano.</p>
+<p data-en="&lt;b&gt;Idea:&lt;/b&gt; I trained a model to recognize 8 Latin genres (salsa, tango, samba, reggaeton, forró, MPB, pagode, sertanejo) from Spotify audio features, then had it “listen” to Afro-Peruvian music it had never seen.&lt;br/&gt;&lt;b&gt;Data:&lt;/b&gt; ~7,000 reference songs from a 114k Kaggle dataset, 65 Afro-Peruvian tracks from a 1.2M dataset and 28 Peruvian pop songs as a control group.&lt;br/&gt;&lt;b&gt;Finding:&lt;/b&gt; there's no single Afro-Peruvian sound, and it's more atypical than average Latin music, while Peruvian pop is completely “normal”: what's different isn't being Peruvian, it's the Afro-Peruvian sound."><b>Idea:</b> entrené un modelo para reconocer 8 géneros latinos (salsa, tango, samba, reggaetón, forró, MPB, pagode y sertanejo) con las características de audio de Spotify, y luego le hice “escuchar” música afroperuana que nunca vio.<br/><b>Datos:</b> ~7 000 canciones de referencia de un dataset de Kaggle de 114 000, 65 canciones afroperuanas de otro de 1,2 millones y 28 de pop peruano como grupo de control.<br/><b>Hallazgo:</b> no hay un solo sonido afroperuano, y es más atípico que la música latina promedio, mientras que el pop peruano es completamente “normal”: lo distinto no es ser peruano, es el sonido afroperuano.</p>
 <p class="lim" data-en="Compared 3 classifiers; Gradient Boosting won. Tango and reggaeton are the easiest to recognize; Brazilian genres get confused with each other. Limitations: small Peruvian sample, no cumbia or chicha, and Spotify features don't capture specific rhythms like the cajón's.">Comparé 3 clasificadores; ganó Gradient Boosting. Tango y reggaetón son los más fáciles de reconocer; los géneros brasileños se confunden entre sí. Limitaciones: muestra peruana pequeña, sin cumbia ni chicha, y las características de Spotify no captan ritmos como el del cajón.</p>
 <div class="stack"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>UMAP</span><span>matplotlib</span></div>
 </div>
-</article>
-<article class="card big reveal" data-cat="python">
-<div class="shot"><img alt="Gráfico del monitor de precios" src="img/proyecto-destacado.png"/></div>
+</article><article class="card big reveal" data-cat="eng">
+<div class="shot"><img alt="Dashboard del monitor de precios" loading="lazy" src="img/monitor.jpg"/></div>
 <div class="body">
-<span class="badge" data-en="Personal project">Proyecto personal</span>
-<h3 data-en="A crypto price monitor that runs itself">Monitor de precios cripto que corre solo</h3>
-<p data-en="Can I catch a price drop without watching the market all day? This script fetches prices, stores history, plots it and fires alerts — automatically, every day.">¿Puedo enterarme de una caída de precio sin mirar el mercado todo el día? Este script consulta precios, guarda el histórico, grafica y lanza alertas — todo en automático cada día.</p>
+<span class="badge" data-en="⚙️ Data pipeline · Personal project">⚙️ Pipeline de datos · Proyecto personal</span>
+<h3 data-en="A crypto monitor that runs itself, for $0">Monitor cripto que corre solo, con costo $0</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; tracking crypto by hand is slow and leaves no history to analyze.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; a serverless, $0 pipeline: every hour GitHub Actions runs Python, queries CoinGecko (with retries), stores history as CSV in the repo and computes 24h/7d/30d changes, moving averages, volatility, max drawdown and correlation across BTC, ETH and SOL.&lt;br/&gt;&lt;b&gt;Result:&lt;/b&gt; a web dashboard with interactive Plotly charts, live price every minute, Telegram alerts and a “what if I had invested?” simulator."><b>Problema:</b> seguir el mercado cripto a mano es lento y no deja historial para analizar.<br/><b>Lo que hice:</b> un pipeline sin servidor y con costo $0: cada hora GitHub Actions ejecuta Python, consulta CoinGecko (con reintentos), guarda el histórico en CSV dentro del repo y calcula cambios a 24h/7d/30d, medias móviles, volatilidad, máxima caída y correlación entre BTC, ETH y SOL.<br/><b>Resultado:</b> un dashboard web con gráficos interactivos en Plotly, precio en vivo cada minuto, alertas por Telegram y un simulador de “¿y si hubiera invertido?”.</p>
 <ul>
-<li data-en="Daily CSV history + updated chart">Histórico diario en CSV + gráfico actualizado</li>
-<li data-en="YAML-configurable, no API keys">Configurable por YAML, sin API keys</li>
-<li data-en="GitHub Actions pipeline that commits results">Pipeline con GitHub Actions que hace commit de resultados</li>
+<li data-en="7 automated tests with a mocked API (pytest) + CI on every change">7 tests automáticos con API simulada (pytest) + CI en cada cambio</li>
+<li data-en="Alerts configurable via YAML: price thresholds and big daily moves">Alertas configurables en YAML: umbrales de precio y movimientos fuertes</li>
+<li data-en="Clean code checked with ruff">Código revisado con ruff</li>
 </ul>
-<div class="stack"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>GitHub Actions</span></div>
-<div class="acts"><a data-en="Code ↗" href="https://github.com/tuusuario/price-monitor" target="_blank">Código ↗</a><a href="https://tuusuario.github.io/price-monitor" target="_blank">Demo ↗</a></div>
+<div class="stack"><span>Python</span><span>pandas</span><span>GitHub Actions</span><span>Plotly.js</span><span>pytest</span><span>CoinGecko API</span></div>
+</div></article><article class="card half reveal" data-cat="auto">
+<span class="badge" data-en="★ In production · Pacífico">★ En producción · Pacífico</span>
+<div class="mini-chart"><i style="height:95%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:40%"></i><i style="height:22%"></i></div>
+<h3 data-en="Smart automation: RPA for Home insurance claims">Automatización inteligente: RPA para siniestros de Hogar</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; the Home claims workflow had manual, repetitive steps eating up the team's hours.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; mapped the AS-IS process, designed the TO-BE and built an RPA bot that runs those tasks end to end.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; less manual work, fewer data-entry errors and a team focused on cases that need judgment."><b>Problema:</b> el flujo de siniestros de Hogar tenía pasos manuales y repetitivos que consumían horas del equipo.<br/><b>Lo que hice:</b> mapeé el proceso AS-IS, diseñé el TO-BE y desarrollé un bot RPA que ejecuta esas tareas de punta a punta.<br/><b>Impacto:</b> menos carga manual, menos errores de digitación y un equipo enfocado en casos que requieren criterio.</p>
+<div class="stack"><span>RPA</span><span>Python</span><span>Mapeo AS-IS / TO-BE</span></div>
+</article><article class="card half reveal" data-cat="auto">
+<span class="badge" data-en="★ In production · Pacífico">★ En producción · Pacífico</span>
+<div class="mini-chart"><i style="height:30%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:75%"></i><i style="height:100%"></i></div>
+<h3 data-en="Emails that send themselves">Correos que se envían solos</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; follow-up emails were written and sent by hand, with a risk of slipping through.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; Power Automate flows that pull the data, build the email and send it at the right moment.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; on-time, traceable communications with zero manual effort."><b>Problema:</b> correos de seguimiento que se armaban y enviaban a mano, con riesgo de olvidos.<br/><b>Lo que hice:</b> flujos en Power Automate que toman la data, arman el correo y lo envían solos en el momento correcto.<br/><b>Impacto:</b> comunicaciones a tiempo, trazables y sin esfuerzo manual.</p>
+<div class="stack"><span>Power Automate</span><span>Outlook</span><span>Excel</span></div>
+</article><article class="card big reveal" data-cat="proc">
+<div class="shot kpis">
+<figure class="proj-photo"><img alt="Mapi presentando en XpoSTEM" loading="lazy" src="img/xpostem.jpg"/><figcaption data-en="Presenting the prototype at XpoSTEM">Presentando el prototipo en XpoSTEM</figcaption></figure>
+<div class="kpi"><b>-78%</b><span data-en="quotation time (4.5h → 1h)">tiempo de cotización (4.5h → 1h)</span></div>
+<div class="kpi"><b>-86%</b><span data-en="inventory error (7% → &lt;1%)">error de inventario (7% → &lt;1%)</span></div>
+<div class="kpi"><b>-80%</b><span data-en="waste (5–10% → &lt;1%)">mermas (5–10% → &lt;1%)</span></div>
+<div class="kpi"><b>35%</b><span data-en="estimated IRR · 2-year payback">TIR estimada · recupero en 2 años</span></div>
 </div>
-</article>
-<article class="card half reveal" data-cat="python">
+<div class="body">
+<span class="badge" data-en="🏆 Presented at XpoSTEM 2025-2">🏆 Expuesto en XpoSTEM 2025-2</span>
+<h3 data-en="Warehouse Optimization · PUCP">Optimización de Almacenes PUCP</h3>
+<p data-en="&lt;b&gt;Problem:&lt;/b&gt; the warehouse of PUCP's Gastronomy, Hospitality and Tourism faculty had unrecorded inflows, no stock alerts and high waste.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; with my team, diagnosed the critical process (inventory record reconciliation) and designed a solution: OCR + image recognition for intake, a scale connected to a cloud database and a web dashboard.&lt;br/&gt;&lt;b&gt;Impact (projected):&lt;/b&gt; zero Excel rework (3h/week → 0), real-time inventory and S/15,000 in annual benefits on an S/18,000 investment."><b>Problema:</b> el almacén de la Facultad de Gastronomía, Hotelería y Turismo de la PUCP tenía ingresos sin registrar, productos sin alertas y mermas altas.<br/><b>Lo que hice:</b> con mi equipo diagnosticamos el proceso crítico (contrastación del registro de inventarios) y diseñamos la solución: OCR y reconocimiento por imagen para el registro, balanza conectada a una base de datos en la nube y un dashboard web.<br/><b>Impacto (proyectado):</b> cero retrabajo en Excel (3h/semana → 0), inventario actualizado en tiempo real y S/15,000 de beneficios anuales sobre una inversión de S/18,000.</p>
+<div class="stack"><span>Lean</span><span>AS-IS / TO-BE</span><span>OCR</span><span>Dashboard</span><span data-en="Economic evaluation">Evaluación económica</span></div>
+</div>
+</article><article class="card half reveal" data-cat="python">
 <span class="badge">Pacífico</span>
 <div class="mini-chart"><i style="height:50%"></i><i style="height:65%"></i><i style="height:58%"></i><i style="height:82%"></i><i style="height:74%"></i></div>
 <h3 data-en="Salvage sales analysis">Análisis de venta de salvamentos</h3>
 <p data-en="&lt;b&gt;Question:&lt;/b&gt; where is value lost when a totaled vehicle goes to auction?&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; merged and analyzed auction-process data with Python and advanced Excel.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; actionable findings to improve turnaround and business decisions."><b>Pregunta:</b> ¿dónde se pierde valor cuando un vehículo siniestrado se subasta?<br/><b>Lo que hice:</b> crucé y analicé datos del proceso con subastadoras en Python y Excel avanzado.<br/><b>Impacto:</b> hallazgos accionables para mejorar tiempos y decisiones del negocio.</p>
 <div class="stack"><span>Python</span><span>Excel avanzado</span></div>
-</article>
-<article class="card half reveal" data-cat="sql">
+</article><article class="card half reveal" data-cat="sql">
 <span class="badge">Directo</span>
 <div class="mini-chart"><i style="height:70%"></i><i style="height:45%"></i><i style="height:85%"></i><i style="height:35%"></i><i style="height:60%"></i></div>
 <h3 data-en="Error patterns with SQL">Patrones de error con SQL</h3>
 <p data-en="&lt;b&gt;Problem:&lt;/b&gt; recurring errors with no clear cause.&lt;br/&gt;&lt;b&gt;What I did:&lt;/b&gt; advanced SQL queries to measure patterns, plus root-cause and 5W2H analysis.&lt;br/&gt;&lt;b&gt;Impact:&lt;/b&gt; data-prioritized improvements and better user onboarding."><b>Problema:</b> errores recurrentes sin una causa clara.<br/><b>Lo que hice:</b> consultas SQL avanzadas para medir patrones, más análisis causa-raíz y 5W2H.<br/><b>Impacto:</b> mejoras priorizadas con datos y mejor onboarding de usuarios.</p>
 <div class="stack"><span>SQL</span><span>Lean</span><span>Jira</span></div>
-</article>
-<article class="card half reveal" data-cat="powerbi">
-<span class="badge wip" data-en="● Work in progress">● En construcción</span>
-<div class="mini-chart"><i style="height:40%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:65%"></i></div>
-<h3 data-en="Sales dashboard">Dashboard de ventas</h3>
-<p data-en="Revenue and margin KPIs by region, with interactive filters to find where you win (and where you lose).">KPIs de ingresos y margen por región, con filtros interactivos para encontrar dónde se gana (y dónde se pierde).</p>
-<div class="stack"><span>Power BI</span><span>DAX</span></div>
-</article>
-<article class="card half reveal" data-cat="sql">
-<span class="badge wip" data-en="● Work in progress">● En construcción</span>
-<div class="mini-chart"><i style="height:85%"></i><i style="height:60%"></i><i style="height:75%"></i><i style="height:45%"></i><i style="height:70%"></i></div>
-<h3 data-en="Financial metrics in SQL">Métricas financieras en SQL</h3>
-<p data-en="Modeling and queries to measure profitability and liquidity from transactional data.">Modelado y consultas para medir rentabilidad y liquidez a partir de datos transaccionales.</p>
-<div class="stack"><span>SQL</span><span>Modelado</span></div>
-</article>
-</div>
+</article><article class="card half reveal roadmap" data-cat="ai"><span class="badge wip" data-en="🧠 Next project · AI">🧠 Próximo proyecto · IA</span>
+<div class="mini-chart"><i style="height:35%"></i><i style="height:55%"></i><i style="height:70%"></i><i style="height:85%"></i><i style="height:100%"></i></div>
+<h3 data-en="AI claims assistant">Asistente con IA para siniestros</h3><p data-en="An LLM assistant that reads claim documents (with synthetic data), extracts key fields and classifies each case.">Un asistente con LLM que lee documentos de siniestros (con datos ficticios), extrae los campos clave y clasifica cada caso.</p><div class="stack"><span>Python</span><span>LLMs</span><span>Extracción de datos</span></div></article><article class="card half reveal roadmap" data-cat="eng"><span class="badge wip" data-en="⚙️ Next project · Data Eng">⚙️ Próximo proyecto · Data Eng</span>
+<div class="mini-chart"><i style="height:35%"></i><i style="height:55%"></i><i style="height:70%"></i><i style="height:85%"></i><i style="height:100%"></i></div>
+<h3 data-en="ETL pipeline with Peruvian open data">Pipeline ETL con datos abiertos del Perú</h3><p data-en="Automatically extract, clean and load public data into a cloud database, with a dashboard at the end.">Extraer, limpiar y cargar datos públicos a una base en la nube de forma automática, con un dashboard al final.</p><div class="stack"><span>Python</span><span>SQL</span><span>Cloud</span><span>GitHub Actions</span></div></article></div>
 </div>
 </section>
 <section id="sobre-mi" style="padding-top:20px">
@@ -376,14 +380,14 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="eyebrow" data-en="02 — ABOUT ME">02 — SOBRE MÍ</div>
 <h2 class="reveal" data-en="A bit about me, beyond Excel">Un poco de mí, más allá del Excel</h2>
 <p data-en="I'm María Pia, but everyone calls me Mapi. I study Industrial Engineering at PUCP and found that what I love most is the point where a process meets its data.">Soy María Pia, pero todos me dicen Mapi. Estudio Ingeniería Industrial en la PUCP y descubrí que lo que más me gusta es ese punto donde un proceso y sus datos se encuentran.</p>
-<p data-en="I think like a process engineer (Lean, AS-IS / TO-BE, continuous improvement) and work like an analyst: SQL to understand, Python and Power Automate to automate, Power BI to tell the story. I also love organizing people: I led teams in the student council and the Industrial Engineering association." style="color:var(--muted)">Pienso como ingeniera de procesos (Lean, AS-IS / TO-BE, mejora continua) y trabajo como analista: SQL para entender, Python y Power Automate para automatizar, Power BI para contarlo. También me encanta organizar personas: lideré equipos en el Centro Federado y en la asociación de Ingeniería Industrial.</p>
-<div class="skills"><span>Python</span><span>SQL</span><span>R</span><span>Power BI</span><span>Excel</span><span>Power Automate</span><span>RPA</span><span>pandas · scikit-learn</span><span>Jira · Confluence</span><span>Scrum · Kanban</span><span>Git</span></div>
+<p data-en="I think like a process engineer and work like a data scientist: SQL to understand, machine learning to predict and uncover patterns, and Python, RPA and Power Automate to automate. I'm especially interested in bringing AI into real business processes. I also love organizing people: I led teams in the student council and the Industrial Engineering association." style="color:var(--muted)">Pienso como ingeniera de procesos y trabajo como científica de datos: SQL para entender, machine learning para predecir y descubrir patrones, y Python, RPA y Power Automate para automatizar. Me interesa especialmente llevar la IA a procesos reales de negocio. También me encanta organizar personas: lideré equipos en el Centro Federado y en la asociación de Ingeniería Industrial.</p>
+<div class="skills"><span>Python</span><span>scikit-learn</span><span>Machine Learning</span><span>pandas</span><span>SQL</span><span>R</span><span>UMAP</span><span>RPA</span><span>Power Automate</span><span>Power BI</span><span>GitHub Actions</span><span>Git</span><span>Excel</span><span>Jira · Scrum</span></div>
 </div>
 <div class="facts reveal">
 <div class="fact"><div class="k" data-en="based in">base</div><div class="v" data-en="Lima, Peru 🇵🇪">Lima, Perú 🇵🇪</div></div>
 <div class="fact"><div class="k" data-en="studying">estudio</div><div class="v" data-en="Industrial Eng. · PUCP&lt;br/&gt;&lt;small&gt;Business Analytics concentration&lt;/small&gt;">Ing. Industrial · PUCP<br/><small>Concentración Business Analytics</small></div></div>
 <div class="fact"><div class="k" data-en="languages">idiomas</div><div class="v" data-en="Spanish · English · 한국어 · Français">Español · Inglés · 한국어 · Français</div></div>
-<div class="fact"><div class="k" data-en="heading to">rumbo</div><div class="v">Data Science</div></div>
+<div class="fact"><div class="k" data-en="heading to">rumbo</div><div class="v" data-en="Data Science · AI">Data Science · IA</div></div>
 <div class="fact"><div class="k" data-en="perfect plan">mi plan perfecto</div><div class="v" data-en="Walking historic downtown Lima 🏛️">Caminar el Centro de Lima 🏛️</div></div>
 </div>
 </div>
@@ -416,10 +420,10 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="eyebrow" data-en="✦ BEHIND THE DATA">✦ DETRÁS DE LOS DATOS</div>
 <h2 class="reveal" data-en="Real moments, not just dashboards">Momentos reales, no solo dashboards</h2>
 <div class="gallery">
-<figure class="polaroid reveal"><img src="img/xpostem.jpg" alt="XpoSTEM 2025-2" loading="lazy"><figcaption data-en="Showing our warehouse solution at XpoSTEM 2025-2">Mostrando nuestra solución de almacenes en XpoSTEM 2025-2</figcaption></figure>
-<figure class="polaroid reveal"><img src="img/oficina.jpg" alt="Mapi en su escritorio" loading="lazy"><figcaption data-en="My spot, where the bots get built 💻">Mi lugar, donde se arman los bots 💻</figcaption></figure>
-<figure class="polaroid reveal"><img src="img/dia-practicante.jpg" alt="Día del Practicante en Pacífico" loading="lazy"><figcaption data-en="Intern Day at Pacífico Seguros">Día del Practicante en Pacífico Seguros</figcaption></figure>
-<figure class="polaroid reveal"><img src="img/pacifico.jpg" alt="Mapi en Pacífico Seguros" loading="lazy"><figcaption data-en="One more day at Pacífico 💙">Un día más en Pacífico 💙</figcaption></figure>
+<figure class="polaroid reveal"><img alt="XpoSTEM 2025-2" loading="lazy" src="img/xpostem.jpg"/><figcaption data-en="Showing our warehouse solution at XpoSTEM 2025-2">Mostrando nuestra solución de almacenes en XpoSTEM 2025-2</figcaption></figure>
+<figure class="polaroid reveal"><img alt="Mapi en su escritorio" loading="lazy" src="img/oficina.jpg"/><figcaption data-en="My spot, where the bots get built 💻">Mi lugar, donde se arman los bots 💻</figcaption></figure>
+<figure class="polaroid reveal"><img alt="Día del Practicante en Pacífico" loading="lazy" src="img/dia-practicante.jpg"/><figcaption data-en="Intern Day at Pacífico Seguros">Día del Practicante en Pacífico Seguros</figcaption></figure>
+<figure class="polaroid reveal"><img alt="Mapi en Pacífico Seguros" loading="lazy" src="img/pacifico.jpg"/><figcaption data-en="One more day at Pacífico 💙">Un día más en Pacífico 💙</figcaption></figure>
 </div>
 </div>
 </section>
@@ -428,8 +432,8 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 <div class="contact reveal">
 <div aria-hidden="true" class="balcony"><i></i><i></i><i></i><i></i><i></i></div>
 <div class="eyebrow" data-en="05 — CONTACT" style="color:var(--accent)">05 — CONTACTO</div>
-<h2 data-en="Got a process begging to be &lt;em&gt;automated?&lt;/em&gt;">¿Un proceso que pide a gritos <em>automatizarse?</em></h2>
-<p data-en="I love talking data, processes and automation. Write me, I reply fast.">Me encanta conversar de datos, procesos y automatización. Escríbeme, respondo rápido.</p>
+<h2 data-en="Got a problem begging for &lt;em&gt;data &amp;amp; AI?&lt;/em&gt;">¿Un problema que pide a gritos <em>datos e IA?</em></h2>
+<p data-en="I love talking machine learning, AI and automation. Write me, I reply fast.">Me encanta conversar de machine learning, IA y automatización. Escríbeme, respondo rápido.</p>
 <div class="cta">
 <a class="btn btn-primary" data-en="Email me ✉" href="mailto:mariapiasaavedrachavez@gmail.com">Escríbeme ✉</a>
 <a class="btn btn-ghost" href="https://www.linkedin.com/in/mariapiasaavedra111/" target="_blank">LinkedIn ↗</a>
@@ -437,7 +441,7 @@ footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
 </div>
 </div>
 </section>
-<footer data-en="Made with data and a lot of coffee by Mapi 💻 · Lima, <span class='yr'></span>">Hecho con datos y mucho café por Mapi 💻 · Lima, <span class="yr"></span></footer>
+<footer data-en="Made with data and a lot of coffee by Mapi 💻 · Lima, &lt;span class='yr'&gt;&lt;/span&gt;">Hecho con datos y mucho café por Mapi 💻 · Lima, <span class="yr"></span></footer>
 <script>
 const setYear=()=>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());setYear();
 const T=document.querySelectorAll('[data-en]');T.forEach(e=>e.dataset.es=e.innerHTML);
